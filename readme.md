@@ -1,3 +1,3 @@
-# Curso EBAC
+Exercico ebac HTM
 
-Repositorio criado com o intuito de salvar as aulas da EBAC
+Repositorio Criado para exercicio html ebac
