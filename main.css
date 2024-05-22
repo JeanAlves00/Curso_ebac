@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #292929; /* Cor de fundo escura */
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    text-align: center;
+    width: 100%;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 36px;
+    color: #00b3b3; /* Cor do título principal */
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #00cccc; /* Cor do subtítulo */
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #444; /* Cor de fundo do formulário */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra mais escura */
+}
+
+form input,
+form button {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px; /* Aumentei o espaçamento inferior */
+    padding: 18px;
+    box-sizing: border-box;
+    border: 1px solid #666; /* Cor da borda mais escura */
+    border-radius: 8px;
+    background-color: #333; /* Cor de fundo dos inputs e botão */
+    color: #fff; /* Cor do texto nos inputs e botão */
+}
+
+form button {
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #00b3b3; /* Cor de fundo do botão ao passar o mouse */
+}
+
+.error-message {
+    background-color: #bd0000;
+    padding: 16px;
+    border-radius: 16px;
+    max-width: 400px;
+    margin: 0 auto;
+    margin: 16px;
+    display: none;
+}
+
+.success-message {
+    background-color: #333;
+    padding: 16px;
+    border-radius: 16px;
+    max-width: 400px;
+    margin: 16px auto;
+    display: none;
+}
