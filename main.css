@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header,
+section h2
+section h3 {
+    font-family: 'Source Code Pro', monospace;
+    font-weight: normal;
+}
+
+body, input, textarea {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    padding: 16px 0;
+    background-color: rgb(207, 171, 240);
+    color: rgb(83, 0, 109);
+}
+
+header nav li {
+    display: inline;
+    margin-left: 15px;
+    font-size: 18px;
+}
+
+header nav li  a{
+    color: black;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+header .container,
+section .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.brands-list img {
+    height: 24px;
+}
+
+.brands-list li {
+    display: inline;
+    margin-right: 8px;
+}
+
+section .container {
+    align-items: flex-start;
+}
+
+section {
+    padding: 24px 0;
+}
+
+section h2 {
+    margin-bottom: 16;
+    color: rgb(83, 0, 109);
+}
+
+section {
+    color: rgb(165, 88, 172);
+}
+
+section p {
+    margin-bottom: 8px;
+    font-family: 'Sevillana', cursive;
+}
+
+.store-front {
+    margin-right: 32px;
+}
+
+.social-links img {
+    height: 24px;
+}
+
+.social-links li {
+    display: inline;
+    margin-right: 8px;
+}
+
+.social-links li a {
+    text-decoration: none;
+}
+
+#contatic .container {
+    display: block;
+}
+
+.contact-methods {
+    display: flex;
+    justify-content: space-between;
+}
+
+form input,
+form textarea,
+form button {
+    display: block;
+    width: 320px;
+    margin-bottom: 8px;
+    padding: 8px;
+}
+
+form textarea {
+    resize: none;
+    height: 180px;
+}
+
+section h3 {
+    margin-bottom: 16px;
+}
+
+form button {
+    background-color: rgb(165, 88, 172);
+    color: rgb(255, 255, 255);
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: blueviolet;
+}
+
+input:focus, textarea:focus {
+    outline-color: rgb(54, 0, 105);
+}
+
+.endereco {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+footer {
+    background-color: rgb(165, 88, 172);
+    color: rgb(255, 255, 255);
+}
