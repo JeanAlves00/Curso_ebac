@@ -1,0 +1,60 @@
+@import "variaveis.less";
+@import "mixins.less";
+
+@brackpointMobile: ~"(max-width: 767px)";
+@brackpointTablet: ~"(min-width: 768px) and (max-width: 1023px)";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'roboto', sans-serif;
+}
+
+body {
+    background-color: @corDeFundo;
+    color: @corDeTexto;
+}
+
+.container {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+
+    @media @brackpointTablet {
+        max-width: 80%;
+    }
+
+    @media @brackpointMobile {
+        max-width: 70%;
+    }
+}
+
+header {
+    padding: 24px;
+
+    .profile-avatar {
+        width: 150px;
+        height: 150px;
+        display: block;
+        margin: 0 auto 24px;
+        border: 3px solid;
+        border-radius: 50%;
+    }
+}
+
+
+
+.profile-bio {
+    text-align: center;
+        
+    &-name {
+        font-size: 32px;
+        .margin-bottom8();
+    }
+
+    &-subtitle {
+        font-size: 18px;
+        opacity: 80%;
+    }
+}
