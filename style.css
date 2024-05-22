@@ -1,0 +1,397 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container,
+section .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+h1 {
+    font-size: 45px;
+    color: #2f00ff;
+    font-weight: bold;
+}
+
+header {
+    padding: 16px 0 0;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 56px;
+}
+
+.menu {
+    color: black;
+    font-weight: bold;
+    margin: 0 auto;
+    display: block;
+    width: fit-content;
+}
+
+.menu > li {
+    float: left;
+    list-style: none;
+    padding: 16px;
+    border-top: 4px solid transparent;
+    position: relative;
+}
+
+.clear {
+    clear: both;
+}
+
+.menu li:hover .submenu {
+    display: block;
+}
+
+.menu li:hover {
+    border-color: rgb(0, 0, 0);
+}
+
+.submenu {
+    display: none;
+    background-color: rgb(226, 233, 233);
+    position: absolute;
+    left: 0;
+    width: 300px;
+    top: 100%;
+}
+
+.submenu li {
+    display: block;
+    padding: 4px;
+}
+
+.menu-pesquisa {
+    display: flex;
+    align-items: center;
+    max-width: 300px;
+}
+
+h2 {
+    border-bottom: 2px solid black;
+}
+
+.campo-pesquisa {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.botao-pesquisa {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 8px;
+}
+
+section {
+    padding: 24px 0;
+    margin-right: 10px;
+}
+
+.about img {
+    width: 450px;
+    margin-right: 12px;
+}
+
+.about h2 {
+    margin-bottom: 10px;
+}
+
+.about h3 {
+    margin-bottom: 6px;
+}
+
+.brands-list li {
+    display: inline;
+    margin-right: 8px;
+}
+
+.brands-list img {
+    width: 30px;   
+}
+
+.titulo {
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+.slider {
+    width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    
+}
+
+.slider2 img {
+    width: 140px;
+    height: 180px;
+}
+  
+.slider div {
+    text-align: center;
+}
+  
+.slider img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+  
+.slider.slider1 div {
+    background: #f0f0f0;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+
+  
+.product-list li {
+    width: calc(20%); /* Ajuste para o espaçamento */
+    margin: 5px; /* Espaçamento entre os itens */
+    text-align: center;
+  }
+
+  /* Estilos para as imagens */
+.product-list li img {
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+footer li {
+    list-style: none;
+    margin-left: 16px;
+}
+
+footer li img {
+    height: 32px;
+}
+
+footer .container {
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (min-width:768px) and (max-width: 1023px) {
+    .abrir-menu button {
+        margin-top: 16px;
+        background-color: #3498db;
+        color: #fff;
+        padding: 5px 10px;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    .abrir-menu button:hover {
+        background-color: #2980b9; 
+    }
+
+    header {
+        padding: 10px 0;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .campo-pesquisa {
+        max-width: 200px;
+    }
+
+    .botao-pesquisa {
+        padding: 6px 12px;
+    }
+
+    .about {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .brands-list li {
+        margin-right: 6px;
+    }
+
+    .brands-list img {
+        max-width: 30px;
+    }
+
+    #destaques {
+        display: none;
+    }
+
+    .submenu {
+        display: block;
+        width: 100%;
+        position: relative;
+    }
+    
+    .menu > li {
+        float: both;
+    }
+    
+    .menu li:hover {
+        border-color: red;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menu > li {
+        clear: both;
+    }
+    
+    .submenu li {
+        display: block;
+        padding: 4px;
+    }
+
+    .product-list li {
+        width: calc(40%); /* Ajuste para o espaçamento */
+        margin: 5px; /* Espaçamento entre os itens */
+        text-align: center;
+      }
+
+    .promo img {
+        max-width: 100%;
+    }
+
+    footer .container img {
+        height: 28px;
+    }
+
+    .abrir-menu{
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+
+    .abrir-menu button {
+        margin-bottom: 16px;
+        margin-top: 16px;
+        background-color: #3498db;
+        color: #fff;
+        padding: 5px 10px;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    .abrir-menu button:hover {
+        background-color: #2980b9; 
+    }
+
+    header .container {
+        flex-direction: column;
+    }
+
+    .container {
+        max-width: 90%;
+        flex-wrap: wrap;
+    }
+
+    .about img {
+        max-width: 70%;
+    }
+
+    .product-list {
+        display: block;
+        margin: auto;
+        width: 50%;
+      }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .campo-pesquisa {
+        max-width: 150px;
+    }
+
+    .botao-pesquisa {
+        padding: 4px 8px;
+    }
+
+    .abrir-menu{
+        text-align: center;
+    }
+
+    .submenu {
+        display: block;
+        width: 100%;
+        position: relative;
+    }
+    
+    .menu > li {
+        float: both;
+    }
+    
+    .menu li:hover {
+        border-color: red;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menu > li {
+        clear: both;
+    }
+    
+    .submenu li {
+        display: block;
+        padding: 4px;
+    }
+
+    .promo {
+        max-width: 90%;
+        flex-wrap: wrap;
+    }
+
+    #destaques {
+        display: none;
+    }
+
+    .about p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .abrir-menu {
+        display: none;
+    }
+}
