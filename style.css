@@ -7,3 +7,19 @@ button {
 .btn-sucess {
     background-color: green; /*regra de um elemento especifico*/
 }
+
+/* Exemplos a serem seguidos
+Seletor: foter .container ul li a
+
+Seletor: footer > .container > ul > li > a
+Seletor: footer > .container > ul > li > a[href]
+
+seletor: footer > .container > li > a
+seletor: footer > .container > li > a[href]
+
+seletor: footer > li > a
+seletor: footer > li > a[href]
+
+ou melhor usar apenas uma classe
+
+seleto: .footer-link */
