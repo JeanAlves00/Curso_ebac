@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Galeria de fotos</h1>
+        <button type="button">Nova imagem +</button>
+    </header>
+    <form>
+        <h2>Inserir nova imagem</h2>
+        <input type="url" id="indereço-imagem-nova" required placeholder="URL da imagem">
+        <button type="submit">Adicionar</button>
+        <Button type="reset" id="botao-cancelar">Cancelar</Button>
+    </form>
+    <ul>
+        <li>
+            <img src="./imagens/1174557.jpg" alt="ciri coplay 1">
+            <div class="overlay-imagem-link">
+                <a href="./imagens/1174557.jpg" title="Ver imagem em tamanho real" target="_blank">
+                    Ver imagem em tamanho ral
+                </a>
+            </div>
+        </li>
+        <li>
+            <img src="./imagens/1203010.jpg" alt="triss cosplay">
+            <div class="overlay-imagem-link">
+                <a href="./imagens/1203010.jpg" title="Ver imagem em tamanho real" target="_blank">
+                    Ver imagem em tamanho ral
+                </a>
+            </div>
+        </li>
+        <li>
+            <img src="./imagens/1223613.jpg" alt="capa tales of">
+            <div class="overlay-imagem-link">
+                <a href="./imagens/1223613.jpg" title="Ver imagem em tamanho real" target="_blank">
+                    Ver imagem em tamanho ral
+                </a>
+            </div>
+        </li>
+    </ul>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
