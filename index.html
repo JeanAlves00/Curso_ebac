@@ -1,0 +1,1575 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Shop</title>
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar navbar-expand-lg sticky-top p-2" id="cabecalho">
+        <div class="container">
+            <h1 class="navbar-brand m-0 section-title">Game shop</h1>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao">
+                <ul class="nav nav-pills d-block d-md-flex">
+                    <li class="nav-item fw-bold">
+                        <a class="nav-link" href="#inicio">
+                            <i class="bi bi-house-door me-1"></i>
+                            Inicio</a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a class="nav-link" href="#promocoes">
+                            <i class="bi bi-cart3"></i>
+                            Promoções</a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a class="nav-link" href="#compras">
+                            <i class="bi bi-shop"></i>
+                            Compras</a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a class="nav-link" href="#fale-conosco">
+                            <i class="bi bi-chat-left-text me-1"></i>
+                            Fale Conosco</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div data-bs-spy="scroll" data-bs-target="cabecalho" data-bs-smooth-scroll="true">
+        <section id="inicio">
+            <div class="carousel slide" data-bs-ride="carousel" id="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100 img-fluid" src="/images/carousel_image/finalfantasyviizackfair.jpg" alt="slide1">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100 img-fluid" src="/images/carousel_image/battlefield2042.png" alt="slide2">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100 img-fluid" src="/images/carousel_image/crysis.jpg" alt="slide3">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100 img-fluid" src="/images/carousel_image/destiny2.jpg" alt="slide4">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100 img-fluid" src="/images/carousel_image/the_witcher3.jpg" alt="slide5">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+                <div class="carousel-indicators">
+                    <button data-bs-target="#carousel" class="active" data-bs-slide-to="0"></button>
+                    <button data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                    <button data-bs-target="#carousel" data-bs-slide-to="2"></button>
+                    <button data-bs-target="#carousel" data-bs-slide-to="3"></button>
+                    <button data-bs-target="#carousel" data-bs-slide-to="4"></button>
+                </div>
+            </div>
+            <div class="pt-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <img src="/images/inicio/gameshop.jpg" class="d-block w-100 rounded" alt="foto interna restaurante">
+                        </div>
+                        <div class="col-md-7 mt-3 mt-md-0">
+                            <h2 class="section-title">Game <span class="text-colored">shop</span></h2>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse dolores porro quasi reprehenderit nihil unde facilis, asperiores totam voluptas repellendus maiores debitis. Ut sequi impedit sint ad, modi officiis facere?
+                            </p>
+                            <h3 class="section-title">Sobre <span class="text-colored">a loja</span></h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus atque nam aut tempora eaque architecto incidunt, cumque nesciunt distinctio doloremque facilis? Voluptatem, consequatur aliquam aperiam id eligendi nisi corrupti maxime.
+                            </p>
+                            <ul>
+                                <li>Item 1</li>
+                                <li>Item 2</li>
+                                <li>Item 3</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="promocoes" class="pt-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center">Pomo<span class="text-colored">cões</span></h2>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-lg-4 col-md-6 col-sm-12 pt-5">
+                        <div class="card h-100">
+                            <img src="/images/promoção/boderlands3_capa.avif" class="card-img-top" alt="Imagem do Produto">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold">Borderlands 3</h5>
+                                <p class="card-text">"Borderlands 3" é um jogo eletrônico de tiro em primeira pessoa desenvolvido pela Gearbox Software e publicado pela 2K Games. Lançado em setembro de 2019, é o quarto título principal da série "Borderlands" e a sequência de "Borderlands 2", lançado em 2012.</p>
+                                <h6 class="card-subtitle mb-2 text-muted">Preço: R$17,99</h6>
+                                <p class="card-text">Disponibilidade: <img style="width: 25px; height: 25px;" src="/images/logo plataformas/xbox.png"></p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="#" class="btn btn-primary btn-block">Comprar</a>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalBorderlands">
+                                    Mais
+                                </button>
+                                    <div class="modal fade" id="modalBorderlands" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel">Borderlands 3</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div id="carouselmodalBorderlands" class="carousel slide" data-bs-ride="carousel">
+                                                        <div class="carousel-indicators">
+                                                            <button type="button" data-bs-target="#carouselmodalBorderlands" data-bs-slide-to="0" class="active"></button>
+                                                            <button type="button" data-bs-target="#carouselmodalBorderlands" data-bs-slide-to="1"></button>
+                                                            <button type="button" data-bs-target="#carouselmodalBorderlands" data-bs-slide-to="2"></button>
+                                                        </div>
+                                                        <div class="carousel-inner">
+                                                            <div class="carousel-item active">
+                                                                <img src="/images/promoção/carrousel/borderlands 3/borderlands 3.jpg" alt="Los Angeles" class="d-block w-100">
+                                                            </div>
+                                                            <div class="carousel-item">
+                                                                <img src="/images/promoção/carrousel/borderlands 3/borderlands_3_1.jpg" alt="Chicago" class="d-block w-100">
+                                                            </div>
+                                                            <div class="carousel-item">
+                                                                <img src="/images/promoção/carrousel/borderlands 3/borderlands_3_2.jpg" alt="New York" class="d-block w-100">
+                                                            </div>
+                                                        </div>
+                                                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselmodalBorderlands" data-bs-slide="prev">
+                                                            <span class="carousel-control-prev-icon"></span>
+                                                        </button>
+                                                        <button class="carousel-control-next" type="button" data-bs-target="#carouselmodalBorderlands" data-bs-slide="next">
+                                                            <span class="carousel-control-next-icon"></span>
+                                                        </button>
+                                                    </div>
+                                                    <h3 class="section-title text-center">Sinopse</h3>
+                                                    <p>Em um universo vasto e caótico, onde a lei é ditada por corporações gananciosas e bandidos sanguinários, surge uma nova aventura épica: Borderlands 3.</p>
+                                                    <p>Após os eventos de Borderlands 2, os Caça-Arcas estão em busca de novos tesouros e desafios, desta vez enfrentando as ameaças da dupla implacável de irmãos, Tyreen e Troy Calypso, líderes do culto fanático Children of the Vault.</p>
+                                                    <p>Os jogadores assumem o papel de um novo grupo de Caça-Arcas, cada um com habilidades únicas e poderosas, enquanto exploram mundos distantes e enfrentam inimigos de todas as formas e tamanhos.</p>
+                                                    <p>Com um arsenal absurdamente diversificado, que inclui desde armas convencionais até dispositivos estranhos e mortais, os jogadores devem enfrentar desafios cada vez maiores enquanto desvendam os segredos de Pandora e além.</p>
+                                                    <p>Além de uma campanha eletrizante para um jogador, Borderlands 3 oferece ação cooperativa para até quatro jogadores, permitindo que amigos se juntem para saquear e pilhar juntos em busca da glória e da fortuna.</p>
+                                                    <p>Com gráficos estilizados, humor ácido e uma trilha sonora única, Borderlands 3 é uma experiência de jogo explosiva que leva o gênero de tiro em primeira pessoa a novas alturas, garantindo horas de diversão e desafios.</p>
+                                                </div>
+                                                <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 pt-5">
+                        <div class="card h-100">
+                            <img src="/images/promoção/capa_the_witcher_3.webp" class="card-img-top" alt="Imagem do Produto">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold">The Witcher 3</h5>
+                                <p class="card-text">"The Witcher 3: Wild Hunt" é um renomado jogo de RPG desenvolvido pela CD Projekt Red e lançado em 2015. Baseado na série de livros de fantasia escrita pelo autor polonês Andrzej Sapkowski, o jogo continua a saga do lendário caçador de monstros Geralt de Rivia.</p>
+                                <h6 class="card-subtitle mb-2 text-muted">Preço: R$32,99</h6>
+                                <p class="card-text">Disponibilidade: <img style="width: 25px; height: 25px;" src="/images/logo plataformas/stean.png"></p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="#" class="btn btn-primary btn-block">Comprar</a>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalTheWitcher3">
+                                    Mais
+                                </button>
+                                    <div class="modal fade" id="modalTheWitcher3" tabindex="-1" aria-labelledby="modalTheWitcher3" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="modalTheWitcher3">The Witcher 3</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div id="carouselmodalTheWitcher3" class="carousel slide" data-bs-ride="carousel">
+                                                        <div class="carousel-indicators">
+                                                            <button type="button" data-bs-target="#carouselmodalTheWitcher3" data-bs-slide-to="0" class="active"></button>
+                                                            <button type="button" data-bs-target="#carouselmodalTheWitcher3" data-bs-slide-to="1"></button>
+                                                            <button type="button" data-bs-target="#carouselmodalTheWitcher3" data-bs-slide-to="2"></button>
+                                                        </div>
+                                                        <div class="carousel-inner">
+                                                            <div class="carousel-item active">
+                                                                <img src="/images/promoção/carrousel/the witcher 3/1.png" alt="Los Angeles" class="d-block w-100">
+                                                            </div>
+                                                            <div class="carousel-item">
+                                                                <img src="/images/promoção/carrousel/the witcher 3/2.jpg" alt="Chicago" class="d-block w-100">
+                                                            </div>
+                                                            <div class="carousel-item">
+                                                                <img src="/images/promoção/carrousel/the witcher 3/3.gif" alt="New York" class="d-block w-100">
+                                                            </div>
+                                                        </div>
+                                                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselmodalTheWitcher3" data-bs-slide="prev">
+                                                            <span class="carousel-control-prev-icon"></span>
+                                                        </button>
+                                                        <button class="carousel-control-next" type="button" data-bs-target="#carouselmodalTheWitcher3" data-bs-slide="next">
+                                                            <span class="carousel-control-next-icon"></span>
+                                                        </button>
+                                                    </div>
+                                                    <h3 class="section-title text-center">Sinopse</h3>
+                                                    <p>Em um mundo mergulhado em conflitos e magia, o lendário Caçador de Monstros Geralt de Rívia enfrenta sua jornada mais épica em The Witcher 3: Wild Hunt.</p>
+                                                    <p>Ambientado em um vasto continente assolado pela guerra e pela intriga política, os jogadores assumem o papel de Geralt enquanto ele busca por sua amada adotada, a jovem feiticeira Ciri, perseguida por uma força misteriosa conhecida como a Caçada Selvagem.</p>
+                                                    <p>Com gráficos deslumbrantes, uma narrativa envolvente e um vasto mundo aberto repleto de segredos e perigos, The Witcher 3 oferece uma experiência de RPG imersiva, onde cada escolha e ação molda o destino de Geralt e do mundo ao seu redor.</p>
+                                                    <p>Ao longo de sua jornada, Geralt encontrará uma miríade de personagens cativantes, desde nobres poderosos até humildes aldeões, cada um com suas próprias histórias e desejos.</p>
+                                                    <p>Com um sistema de combate fluido e desafiador, os jogadores podem dominar uma variedade de habilidades e magias, enfrentando criaturas lendárias e mercenários cruéis em batalhas épicas.</p>
+                                                    <p>Além da campanha principal, The Witcher 3 oferece uma infinidade de missões secundárias e atividades para explorar, garantindo horas de jogo emocionante e recompensador em um dos universos de fantasia mais ricos e envolventes já criados.</p>
+                                                </div>
+                                                <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                  </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 pt-5">
+                        <div class="card h-100">
+                            <img src="/images/promoção/Ghost_of_Tsushima_capa.png" class="card-img-top" alt="Imagem do Produto">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold">Ghost of Tsushima</h5>
+                                <p class="card-text">
+                                    "Ghost of Tsushima" é um jogo de ação e aventura desenvolvido pela Sucker Punch Productions e lançado em 2020 exclusivamente para o PlayStation 4. Ambientado na ilha de Tsushima durante o século XIII, o jogo narra a história de Jin Sakai, um samurai que luta para proteger seu lar e seu povo da invasão mongol.</p>
+                                <h6 class="card-subtitle mb-2 text-muted">Preço: R$159.90</h6>
+                                <p class="card-text">Disponibilidade: <img style="width: 25px; height: 25px;" src="/images/logo plataformas/PlayStation.svg.png"></p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="#" class="btn btn-primary btn-block">Comprar</a>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalghostoftsushima">
+                                    Mais
+                                </button>
+                                    <div class="modal fade" id="modalghostoftsushima" tabindex="-1" aria-labelledby="modalghostoftsushima" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="modalghostoftsushima">Ghost of Tsushima</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div id="carouselmodalghostoftsushima" class="carousel slide" data-bs-ride="carousel">
+                                                        <div class="carousel-indicators">
+                                                            <button type="button" data-bs-target="#carouselmodalghostoftsushima" data-bs-slide-to="0" class="active"></button>
+                                                            <button type="button" data-bs-target="#carouselmodalghostoftsushima" data-bs-slide-to="1"></button>
+                                                            <button type="button" data-bs-target="#carouselmodalghostoftsushima" data-bs-slide-to="2"></button>
+                                                        </div>
+                                                        <div class="carousel-inner">
+                                                            <div class="carousel-item active">
+                                                                <img src="/images/promoção/carrousel/ghostoftsushima/ghostoftsushima.jpeg" alt="Los Angeles" class="d-block w-100">
+                                                            </div>
+                                                            <div class="carousel-item">
+                                                                <img src="/images/promoção/carrousel/ghostoftsushima/ghostoftsushima1.gif" alt="Chicago" class="d-block w-100">
+                                                            </div>
+                                                            <div class="carousel-item">
+                                                                <img src="/images/promoção/carrousel/ghostoftsushima/ghostoftsushima2.gif" alt="New York" class="d-block w-100">
+                                                            </div>
+                                                        </div>
+                                                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselmodalghostoftsushima" data-bs-slide="prev">
+                                                            <span class="carousel-control-prev-icon"></span>
+                                                        </button>
+                                                        <button class="carousel-control-next" type="button" data-bs-target="#carouselmodalghostoftsushima" data-bs-slide="next">
+                                                            <span class="carousel-control-next-icon"></span>
+                                                        </button>
+                                                    </div>
+                                                    <h3 class="section-title text-center">Sinopse</h3>
+                                                    <p>Em uma época de samurais e invasões mongóis, surge uma história de honra, traição e redenção em Ghost of Tsushima.</p>
+                                                    <p>Ambientado na ilha japonesa de Tsushima durante o século XIII, os jogadores assumem o papel de Jin Sakai, um samurai em uma missão desesperada para defender seu lar e seu povo da invasão mongol.</p>
+                                                    <p>Com paisagens deslumbrantes e uma jogabilidade fluida, os jogadores exploram um mundo aberto vasto e rico, repleto de segredos para descobrir e desafios para superar.</p>
+                                                    <p>Utilizando suas habilidades de combate samurai e táticas furtivas, Jin enfrenta inimigos poderosos e forças invasoras, enquanto busca meios de vencer um adversário superior em número e força.</p>
+                                                    <p>Além da campanha principal, Ghost of Tsushima oferece uma variedade de atividades secundárias, desde duelos de espadas até missões de resgate, permitindo aos jogadores mergulhar ainda mais na cultura e na história do Japão feudal.</p>
+                                                    <p>Com uma narrativa emocionante e personagens cativantes, Ghost of Tsushima é uma jornada inesquecível através de um dos períodos mais turbulentos da história japonesa, onde cada escolha de Jin molda o destino de Tsushima e de seus habitantes.</p>
+                                                </div>
+                                                <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 pt-5">
+                        <div class="card h-100">
+                            <img src="/images/promoção/Capa_Starfield.jpg" class="card-img-top" alt="Imagem do Produto">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold">Starfield</h5>
+                                <p class="card-text">"Starfield" é um aguardado jogo de RPG de ficção científica desenvolvido pela Bethesda Game Studios, conhecida por títulos como "The Elder Scrolls" e "Fallout". O jogo promete levar os jogadores a uma jornada épica pelo espaço, explorando novos planetas, encontrando criaturas alienígenas e participando de aventuras intergalácticas. </p>
+                                <h6 class="card-subtitle mb-2 text-muted">Preço: R$249.90</h6>
+                                <p class="card-text">Disponibilidade: <img style="width: 25px; height: 25px;" src="/images/logo plataformas/xbox.png"></p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="#" class="btn btn-primary btn-block">Comprar</a>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalStarfield">
+                                    Mais
+                                </button>
+                                    <div class="modal fade" id="modalStarfield" tabindex="-1" aria-labelledby="modalStarfield" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="modalStarfield">Starfield</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div id="carouselmodalStarfield" class="carousel slide" data-bs-ride="carousel">
+                                                        <div class="carousel-indicators">
+                                                            <button type="button" data-bs-target="#carouselmodalStarfield" data-bs-slide-to="0" class="active"></button>
+                                                            <button type="button" data-bs-target="#carouselmodalStarfield" data-bs-slide-to="1"></button>
+                                                            <button type="button" data-bs-target="#carouselmodalStarfield" data-bs-slide-to="2"></button>
+                                                        </div>
+                                                        <div class="carousel-inner">
+                                                            <div class="carousel-item active">
+                                                                <img src="/images/promoção/carrousel/starfield/starfield.png" alt="Los Angeles" class="d-block w-100">
+                                                            </div>
+                                                            <div class="carousel-item">
+                                                                <img src="/images/promoção/carrousel/starfield/starfield1.gif" alt="Chicago" class="d-block w-100">
+                                                            </div>
+                                                            <div class="carousel-item">
+                                                                <img src="/images/promoção/carrousel/starfield/starfield2.gif" alt="New York" class="d-block w-100">
+                                                            </div>
+                                                        </div>
+                                                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselmodalStarfield" data-bs-slide="prev">
+                                                            <span class="carousel-control-prev-icon"></span>
+                                                        </button>
+                                                        <button class="carousel-control-next" type="button" data-bs-target="#carouselmodalStarfield" data-bs-slide="next">
+                                                            <span class="carousel-control-next-icon"></span>
+                                                        </button>
+                                                    </div>
+                                                    <h3 class="section-title text-center">Sinopse</h3>
+                                                    <p>Starfield marca o primeiro lançamento de um novo universo em 25 anos da Bethesda Game Studios, os aclamados criadores de The Elder Scrolls V: Skyrim e Fallout 4.</p>
+                                                    <p>Neste RPG de próxima geração situado entre as estrelas, os jogadores poderão encarnar qualquer personagem que desejarem e explorar com total liberdade enquanto embarcam em uma jornada épica para desvendar o maior mistério da humanidade.</p>
+                                                    <p>O jogo promete entregar um universo massivo para explorar, com diversos planetas, biomas e formas de vida diferenciadas ao longo do caminho.</p>
+                                                    <p>Além disso, os jogadores podem esperar a característica escrita de jogos RPG da Bethesda, com múltiplos caminhos para escolher e maneiras de avançar em sua jornada.</p>
+                                                    <p>A história de Starfield se desenrola no ano de 2330, quando a humanidade já expandiu para além do nosso sistema solar e colonizou novos planetas, transformando-se em um povo do espaço.</p>
+                                                    <p>A partir de uma simples missão de mineração espacial, os jogadores se juntarão à Constelação, o último grupo de exploradores espaciais em busca de artefatos raros pela galáxia, navegando pela vastidão dos Sistemas Colonizados no jogo mais ambicioso já criado pela Bethesda Game Studios.</p>
+                                                </div>
+                                                <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 pt-5">
+                        <div class="card h-100">
+                            <img src="/images/promoção/Sunset_Overdrive_capa.jpg" class="card-img-top" alt="Imagem do Produto">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold">Sunset Overdrive</h5>
+                                <p class="card-text">
+                                    "Sunset Overdrive" é um jogo de ação e aventura em mundo aberto desenvolvido pela Insomniac Games e lançado em 2014, inicialmente exclusivamente para Xbox One e mais tarde para PC. Ambientado em uma cidade fictícia chamada Sunset City, o jogo combina elementos de parkour, combate e humor irreverente.</p>
+                                <h6 class="card-subtitle mb-2 text-muted">Preço: R$45.90</h6>
+                                <p class="card-text">Disponibilidade: <img style="width: 25px; height: 25px;" src="/images/logo plataformas/xbox.png"> <img style="width: 25px; height: 25px;" src="/images/logo plataformas/stean.png"> </p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="#" class="btn btn-primary btn-block">Comprar</a>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalSunsetOverdrive">
+                                    Mais
+                                </button>
+                                    <div class="modal fade" id="modalSunsetOverdrive" tabindex="-1" aria-labelledby="modalSunsetOverdrive" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="modalSunsetOverdrive">Sunset Overdrive</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div id="carouselmodalSunsetOverdrive" class="carousel slide" data-bs-ride="carousel">
+                                                        <div class="carousel-indicators">
+                                                            <button type="button" data-bs-target="#carouselmodalSunsetOverdrive" data-bs-slide-to="0" class="active"></button>
+                                                            <button type="button" data-bs-target="#carouselmodalSunsetOverdrive" data-bs-slide-to="1"></button>
+                                                            <button type="button" data-bs-target="#carouselmodalSunsetOverdrive" data-bs-slide-to="2"></button>
+                                                        </div>
+                                                        <div class="carousel-inner">
+                                                            <div class="carousel-item active">
+                                                                <img src="/images/promoção/carrousel/SunsetOverdrive/SunsetOverdrive.jpg" alt="Los Angeles" class="d-block w-100">
+                                                            </div>
+                                                            <div class="carousel-item">
+                                                                <img src="/images/promoção/carrousel/SunsetOverdrive/Sunset-Overdrive-gif.gif" alt="Chicago" class="d-block w-100">
+                                                            </div>
+                                                            <div class="carousel-item">
+                                                                <img src="/images/promoção/carrousel/SunsetOverdrive/SunsetOverdrive2.jpg" alt="New York" class="d-block w-100">
+                                                            </div>
+                                                        </div>
+                                                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselmodalSunsetOverdrive" data-bs-slide="prev">
+                                                            <span class="carousel-control-prev-icon"></span>
+                                                        </button>
+                                                        <button class="carousel-control-next" type="button" data-bs-target="#carouselmodalSunsetOverdrive" data-bs-slide="next">
+                                                            <span class="carousel-control-next-icon"></span>
+                                                        </button>
+                                                    </div>
+                                                    <h3 class="section-title text-center">Sinopse</h3>
+                                                    <p>Prepare-se para uma aventura eletrizante e cheia de estilo em Sunset Overdrive, um jogo de ação e mundo aberto da Insomniac Games.</p>
+                                                    <p>Situado em uma cidade fictícia chamada Sunset City, os jogadores assumem o papel de um dos sobreviventes de um apocalipse causado por uma bebida energética contaminada, transformando os habitantes em mutantes grotescos.</p>
+                                                    <p>Com um foco na ação acrobática e no uso criativo de armas improvisadas, os jogadores devem percorrer a cidade em alta velocidade, enfrentando hordas de inimigos enquanto buscam uma maneira de escapar da quarentena e desvendar o mistério por trás do surto.</p>
+                                                    <p>Com um estilo visual vibrante e irreverente, Sunset Overdrive combina elementos de parkour, combate rápido e humor peculiar para criar uma experiência única e empolgante.</p>
+                                                    <p>Além da campanha principal, o jogo oferece uma variedade de missões secundárias e atividades para explorar, desde desafios de corrida até batalhas contra chefes épicos, garantindo horas de diversão para os jogadores.</p>
+                                                </div>
+                                                <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 pt-5">
+                        <div class="card h-100">
+                            <img src="/images/promoção/Half-Life_Alyx_capat.jpg" class="card-img-top" alt="Imagem do Produto">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold">Half-Life: Alyx</h5>
+                                <p class="card-text">"Half-Life: Alyx" é um jogo de realidade virtual que se passa no universo da famosa série "Half-Life". Desenvolvido pela Valve Corporation, o jogo coloca os jogadores no papel de Alyx Vance, uma personagem importante da série, em uma luta desesperada contra uma invasão alienígena na cidade de City 17.</p>
+                                <h6 class="card-subtitle mb-2 text-muted">Preço: R$24.90</h6>
+                                <p class="card-text">Disponibilidade: <img style="width: 25px; height: 25px;" src="/images/logo plataformas/stean.png"> </p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="#" class="btn btn-primary btn-block">Comprar</a>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalHalfLife">
+                                    Mais
+                                </button>
+                                    <div class="modal fade" id="modalHalfLife" tabindex="-1" aria-labelledby="modalHalfLife" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="modalHalfLife">Half-Life: Alyx</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div id="carouselmodalHalfLife" class="carousel slide" data-bs-ride="carousel">
+                                                        <div class="carousel-indicators">
+                                                            <button type="button" data-bs-target="#carouselmodalHalfLife" data-bs-slide-to="0" class="active"></button>
+                                                            <button type="button" data-bs-target="#carouselmodalHalfLife" data-bs-slide-to="1"></button>
+                                                            <button type="button" data-bs-target="#carouselmodalHalfLife" data-bs-slide-to="2"></button>
+                                                        </div>
+                                                        <div class="carousel-inner">
+                                                            <div class="carousel-item active">
+                                                                <img src="/images/promoção/carrousel/Half-Life Alyx/1053009.jpg" alt="Los Angeles" class="d-block w-100">
+                                                            </div>
+                                                            <div class="carousel-item">
+                                                                <img src="/images/promoção/carrousel/Half-Life Alyx/Half-Life Alyx.gif" alt="Chicago" class="d-block w-100">
+                                                            </div>
+                                                            <div class="carousel-item">
+                                                                <img src="/images/promoção/carrousel/Half-Life Alyx/Half-Life Alyx.jpg" alt="New York" class="d-block w-100">
+                                                            </div>
+                                                        </div>
+                                                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselmodalHalfLife" data-bs-slide="prev">
+                                                            <span class="carousel-control-prev-icon"></span>
+                                                        </button>
+                                                        <button class="carousel-control-next" type="button" data-bs-target="#carouselmodalHalfLife" data-bs-slide="next">
+                                                            <span class="carousel-control-next-icon"></span>
+                                                        </button>
+                                                    </div>
+                                                    <h3 class="section-title text-center">Sinopse</h3>
+                                                    <p>Half-Life: Alyx é a aguardada entrada da Valve Corporation no universo da realidade virtual, trazendo uma experiência imersiva e revolucionária para os fãs da aclamada série Half-Life.</p>
+                                                    <p>Situado entre os eventos de Half-Life e Half-Life 2, os jogadores assumem o papel de Alyx Vance, uma das personagens mais queridas da série, enquanto ela luta pela sobrevivência em uma cidade controlada pelos opressores alienígenas conhecidos como Combine.</p>
+                                                    <p>Com a ajuda de seu pai, Eli Vance, e de um misterioso aliado chamado Russell, Alyx se lança em uma missão perigosa para desvendar os segredos sombrios dos Combine e encontrar uma maneira de resistir à invasão extraterrestre.</p>
+                                                    <p>Com gráficos impressionantes e uma jogabilidade intuitiva projetada especificamente para a realidade virtual, Half-Life: Alyx oferece uma imersão sem precedentes, permitindo que os jogadores explorem ambientes detalhados e interajam com objetos de maneiras nunca antes vistas na série.</p>
+                                                    <p>Além da campanha principal, o jogo apresenta quebra-cabeças desafiadores, combates intensos e momentos de tensão que mantêm os jogadores na ponta de seus assentos enquanto desvendam os mistérios do universo Half-Life.</p>
+                                                    <p>Com uma narrativa envolvente e personagens cativantes, Half-Life: Alyx redefine o potencial da realidade virtual como uma plataforma de jogos, elevando o gênero de ação e aventura a novos patamares.</p>
+                                                </div>
+                                                <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="compras" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center mb-5">
+                        Nossa <span class="text-colored">Loja</span>
+                    </h2>
+                    <div class="row">
+                        <aside class="col-md-2">
+                            <nav class="nav nav-pills flex-column nav-cardapio pt-5">
+                                <button type="button" data-bs-toggle="tab" data-bs-target="#playstation" class="fw-bold text-start nav-link text-colored active" style="margin-right: 40px;">Playstation</button>
+                                <button type="button" data-bs-toggle="tab" data-bs-target="#xbox" class="fw-bold text-start nav-link text-colored" style="margin-right: 40px;">Xbox</button>
+                                <button type="button" data-bs-toggle="tab" data-bs-target="#nintendo" class="fw-bold text-start nav-link text-colored" style="margin-right: 40px;">Nintendo</button>
+                                <button type="button" data-bs-toggle="tab" data-bs-target="#pc" class="fw-bold text-start nav-link text-colored" style="margin-right: 40px;">Stean</button>
+                            </nav>
+                        </aside>
+                        <div class="col-md-10">
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="playstation">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-sm-12 pt-5">
+                                        <div class="card h-100">
+                                            <img src="/images/vendas/playstation/god of war/God_of_War_Ragnarök_capa.jpg" class="card-img-top" alt="Imagem do Produto">
+                                            <div class="card-body">
+                                                <h5 class="card-title fw-bold">God of War Ragnarok</h5>
+                                                <p class="card-text">"God of War Ragnarok" é um jogo eletrônico de ação e aventura desenvolvido pela Santa Monica Studio e publicado pela Sony Interactive Entertainment. É a sequência direta de "God of War" lançado em 2018, onde os jogadores assumem o papel de Kratos, um guerreiro espartano que embarca em uma jornada mitológica pelos reinos nórdicos.</p>
+                                                <h6 class="card-subtitle mb-2 text-muted">Preço: R$79,99</h6>
+                                                <p class="card-text">Disponibilidade: <img style="width: 25px; height: 25px;" src="/images/logo plataformas/PlayStation.svg.png"></p>
+                                            </div>
+                                            <div class="card-footer">
+                                                <a href="#" class="btn btn-primary btn-block">Comprar</a>
+                                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalGodOfWar">
+                                                    Mais
+                                                </button>
+                                                <div class="modal fade" id="modalGodOfWar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <h5 class="modal-title" id="exampleModalLabel">God of War Ragnarok</h5>
+                                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                <div id="carouselmodalGodOfWar" class="carousel slide" data-bs-ride="carousel">
+                                                                    <div class="carousel-indicators">
+                                                                        <button type="button" data-bs-target="#carouselmodalGodOfWar" data-bs-slide-to="0" class="active"></button>
+                                                                        <button type="button" data-bs-target="#carouselmodalGodOfWar" data-bs-slide-to="1"></button>
+                                                                        <button type="button" data-bs-target="#carouselmodalGodOfWar" data-bs-slide-to="2"></button>
+                                                                    </div>
+                                                                    <div class="carousel-inner">
+                                                                        <div class="carousel-item active">
+                                                                            <img src="/images/vendas/playstation/god of war/god of war 1.png" alt="Imagem 1" class="d-block w-100">
+                                                                        </div>
+                                                                        <div class="carousel-item">
+                                                                            <img src="/images/vendas/playstation/god of war/god of war.gif" alt="Imagem 2" class="d-block w-100">
+                                                                        </div>
+                                                                        <div class="carousel-item">
+                                                                            <img src="/images/vendas/playstation/god of war/god of war.jpg" alt="Imagem 3" class="d-block w-100">
+                                                                        </div>
+                                                                    </div>
+                                                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselmodalGodOfWar" data-bs-slide="prev">
+                                                                        <span class="carousel-control-prev-icon"></span>
+                                                                    </button>
+                                                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselmodalGodOfWar" data-bs-slide="next">
+                                                                        <span class="carousel-control-next-icon"></span>
+                                                                    </button>
+                                                                </div>
+                                                                <h3 class="section-title text-center">Sinopse</h3>
+                                                                <p>Em "God of War Ragnarok", os jogadores embarcarão em uma nova jornada ao lado de Kratos e seu filho Atreus, explorando os reinos nórdicos enquanto enfrentam deuses, monstros e criaturas mitológicas em sua busca por redenção e vingança.</p>
+                                                                <p>Com gráficos deslumbrantes e uma narrativa épica, o jogo promete entregar uma experiência imersiva e emocionante que irá cativar os fãs da série e novos jogadores.</p>
+                                                                <p>Prepare-se para se aventurar pelos reinos dos deuses e desvendar os segredos de uma das sagas mais emocionantes e aclamadas dos videogames.</p>
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-12 pt-5">
+                                        <div class="card h-100">
+                                            <img src="/images/vendas/playstation/Horizon Forbidden West/Horizon_Forbidden_West_capa.jpg" class="card-img-top" alt="Imagem do Produto">
+                                            <div class="card-body">
+                                                <h5 class="card-title fw-bold">Horizon Forbidden West</h5>
+                                                <p class="card-text">"Horizon Forbidden West" é um jogo eletrônico de ação e aventura desenvolvido pela Guerrilla Games e publicado pela Sony Interactive Entertainment. É a sequência do aclamado "Horizon Zero Dawn", onde os jogadores exploram um mundo pós-apocalíptico dominado por máquinas.</p>
+                                                <h6 class="card-subtitle mb-2 text-muted">Preço: R$79,99</h6>
+                                                <p class="card-text">Disponibilidade: <img style="width: 25px; height: 25px;" src="/images/logo plataformas/PlayStation.svg.png"></p>
+                                            </div>
+                                            <div class="card-footer">
+                                                <a href="#" class="btn btn-primary btn-block">Comprar</a>
+                                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalHorizonForbiddenWest">
+                                                    Mais
+                                                </button>
+                                                <div class="modal fade" id="modalHorizonForbiddenWest" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <h5 class="modal-title" id="exampleModalLabel">Horizon Forbidden West</h5>
+                                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                <div id="carouselModalHorizonForbiddenWest" class="carousel slide" data-bs-ride="carousel">
+                                                                    <div class="carousel-indicators">
+                                                                        <button type="button" data-bs-target="#carouselModalHorizonForbiddenWest" data-bs-slide-to="0" class="active"></button>
+                                                                        <button type="button" data-bs-target="#carouselModalHorizonForbiddenWest" data-bs-slide-to="1"></button>
+                                                                        <button type="button" data-bs-target="#carouselModalHorizonForbiddenWest" data-bs-slide-to="2"></button>
+                                                                    </div>
+                                                                    <div class="carousel-inner">
+                                                                        <div class="carousel-item active">
+                                                                            <img src="/images/vendas/playstation/Horizon Forbidden West/Horizon Forbidden West1.jpeg" alt="Imagem 1" class="d-block w-100">
+                                                                        </div>
+                                                                        <div class="carousel-item">
+                                                                            <img src="/images/vendas/playstation/Horizon Forbidden West/Horizon Forbidden West.gif" alt="Imagem 2" class="d-block w-100">
+                                                                        </div>
+                                                                        <div class="carousel-item">
+                                                                            <img src="/images/vendas/playstation/Horizon Forbidden West/Horizon Forbidden West2.jpeg" alt="Imagem 3" class="d-block w-100">
+                                                                        </div>
+                                                                    </div>
+                                                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselModalHorizonForbiddenWest" data-bs-slide="prev">
+                                                                        <span class="carousel-control-prev-icon"></span>
+                                                                    </button>
+                                                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselModalHorizonForbiddenWest" data-bs-slide="next">
+                                                                        <span class="carousel-control-next-icon"></span>
+                                                                    </button>
+                                                                </div>
+                                                                <h3 class="section-title text-center">Sinopse</h3>
+                                                                <p>Em "Horizon Forbidden West", os jogadores acompanharão Aloy em uma nova jornada por paisagens impressionantes e perigosas, enfrentando máquinas ferozes e explorando ruínas de civilizações antigas.</p>
+                                                                <p>Com um mundo aberto vasto e cheio de mistérios, o jogo promete entregar uma experiência imersiva e emocionante, expandindo ainda mais o universo de "Horizon Zero Dawn".</p>
+                                                                <p>Prepare-se para descobrir os segredos de um mundo pós-apocalíptico e desvendar os mistérios que aguardam em "Horizon Forbidden West".</p>
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-12 pt-5">
+                                        <div class="card h-100">
+                                            <img src="/images/vendas/playstation/the last of us2/The_Last_of_Us_2_capa.png" class="card-img-top" alt="Imagem do Produto">
+                                            <div class="card-body">
+                                                <h5 class="card-title fw-bold">The Last of Us Part II</h5>
+                                                <p class="card-text">"The Last of Us Part II" é um jogo eletrônico de ação e aventura desenvolvido pela Naughty Dog e publicado pela Sony Interactive Entertainment. É a sequência do aclamado "The Last of Us", onde os jogadores mergulham em um mundo pós-apocalíptico infestado por seres humanos infectados por um fungo.</p>
+                                                <h6 class="card-subtitle mb-2 text-muted">Preço: R$79,99</h6>
+                                                <p class="card-text">Disponibilidade: <img style="width: 25px; height: 25px;" src="/images/logo plataformas/PlayStation.svg.png"></p>
+                                            </div>
+                                            <div class="card-footer">
+                                                <a href="#" class="btn btn-primary btn-block">Comprar</a>
+                                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalTheLastOfUs2">
+                                                    Mais
+                                                </button>
+                                                <div class="modal fade" id="modalTheLastOfUs2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <h5 class="modal-title" id="exampleModalLabel">The Last of Us Part II</h5>
+                                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                <div id="carouselModalTheLastOfUs2" class="carousel slide" data-bs-ride="carousel">
+                                                                    <div class="carousel-indicators">
+                                                                        <button type="button" data-bs-target="#carouselModalTheLastOfUs2" data-bs-slide-to="0" class="active"></button>
+                                                                        <button type="button" data-bs-target="#carouselModalTheLastOfUs2" data-bs-slide-to="1"></button>
+                                                                        <button type="button" data-bs-target="#carouselModalTheLastOfUs2" data-bs-slide-to="2"></button>
+                                                                    </div>
+                                                                    <div class="carousel-inner">
+                                                                        <div class="carousel-item active">
+                                                                            <img src="/images/vendas/playstation/the last of us2/tha last of us 2 1.jpeg" alt="Imagem 1" class="d-block w-100">
+                                                                        </div>
+                                                                        <div class="carousel-item">
+                                                                            <img src="/images/vendas/playstation/the last of us2/the last of us.gif" alt="Imagem 2" class="d-block w-100">
+                                                                        </div>
+                                                                        <div class="carousel-item">
+                                                                            <img src="/images/vendas/playstation/the last of us2/the last of us 2 1.png" alt="Imagem 3" class="d-block w-100">
+                                                                        </div>
+                                                                    </div>
+                                                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselModalTheLastOfUs2" data-bs-slide="prev">
+                                                                        <span class="carousel-control-prev-icon"></span>
+                                                                    </button>
+                                                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselModalTheLastOfUs2" data-bs-slide="next">
+                                                                        <span class="carousel-control-next-icon"></span>
+                                                                    </button>
+                                                                </div>
+                                                                <h3 class="section-title text-center">Sinopse</h3>
+                                                                <p>Em "The Last of Us Part II", os jogadores continuam acompanhando a jornada de Ellie em um mundo devastado por uma pandemia. O jogo explora temas de sobrevivência, vingança e os limites morais que as pessoas enfrentam em situações extremas.</p>
+                                                                <p>Com uma narrativa emocionante e mecânicas de jogo aprimoradas, o título promete cativar os jogadores e levá-los a uma experiência intensa e imersiva, repleta de momentos marcantes e decisões difíceis.</p>
+                                                                <p>Prepare-se para mergulhar em um dos jogos mais aguardados e aclamados da geração.</p>
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-12 pt-5">
+                                        <div class="card h-100">
+                                            <img src="/images/vendas/playstation/Marvel spider man 2/Spider-Man_2_2023_capa.jpg" class="card-img-top" alt="Imagem do Produto">
+                                            <div class="card-body">
+                                                <h5 class="card-title fw-bold">The Last of Us Part II</h5>
+                                                <p class="card-text">É o terceiro jogo da série Marvel's Spider-Man, sendo uma sequência de Marvel's Spider-Man (2018) e de Marvel's Spider-Man: Miles Morales (2020). Nesta edição, Peter Parker e Miles Morales lutam para dar os próximos passos em suas vidas pessoais enquanto combatem várias novas ameaças, incluindo uma milícia privada liderada por Kraven, o Caçador, que transforma a cidade de Nova York em um terreno de caça para indivíduos superpoderosos; e o simbionte extraterrestre Venom, que se liga a Parker e o influencia negativamente, ameaçando destruir seus relacionamentos pessoais.</p>
+                                                <h6 class="card-subtitle mb-2 text-muted">Preço: R$79,99</h6>
+                                                <p class="card-text">Disponibilidade: <img style="width: 25px; height: 25px;" src="/images/logo plataformas/PlayStation.svg.png"></p>
+                                            </div>
+                                            <div class="card-footer">
+                                                <a href="#" class="btn btn-primary btn-block">Comprar</a>
+                                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalMarvelSpiderMan2">
+                                                    Mais
+                                                </button>
+                                                <div class="modal fade" id="modalMarvelSpiderMan2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <h5 class="modal-title" id="exampleModalLabel">The Last of Us Part II</h5>
+                                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                <div id="carouselmodalMarvelSpiderMan2" class="carousel slide" data-bs-ride="carousel">
+                                                                    <div class="carousel-indicators">
+                                                                        <button type="button" data-bs-target="#carouselmodalMarvelSpiderMan2" data-bs-slide-to="0" class="active"></button>
+                                                                        <button type="button" data-bs-target="#carouselmodalMarvelSpiderMan2" data-bs-slide-to="1"></button>
+                                                                        <button type="button" data-bs-target="#carouselmodalMarvelSpiderMan2" data-bs-slide-to="2"></button>
+                                                                    </div>
+                                                                    <div class="carousel-inner">
+                                                                        <div class="carousel-item active">
+                                                                            <img src="/images/vendas/playstation/Marvel spider man 2/MarvelSpiderMan2-1.jpeg" alt="Imagem 1" class="d-block w-100">
+                                                                        </div>
+                                                                        <div class="carousel-item">
+                                                                            <img src="/images/vendas/playstation/Marvel spider man 2/MarvelSpiderMan2-2.jpeg" alt="Imagem 2" class="d-block w-100">
+                                                                        </div>
+                                                                        <div class="carousel-item">
+                                                                            <img src="/images/vendas/playstation/Marvel spider man 2/marvelSpiderMan2.jpg" alt="Imagem 3" class="d-block w-100">
+                                                                        </div>
+                                                                    </div>
+                                                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselmodalMarvelSpiderMan2" data-bs-slide="prev">
+                                                                        <span class="carousel-control-prev-icon"></span>
+                                                                    </button>
+                                                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselmodalMarvelSpiderMan2" data-bs-slide="next">
+                                                                        <span class="carousel-control-next-icon"></span>
+                                                                    </button>
+                                                                </div>
+                                                                <h3 class="section-title text-center">Sinopse</h3>
+                                                                <p>Marvel's Spider-Man 2 é um jogo eletrônico de ação-aventura desenvolvido pela Insomniac Games e publicado pela Sony Interactive Entertainment para o PlayStation 5.</p>
+                                                                <p>Os Spiders Peter Parker e Miles Morales estão de volta em mais uma aventura eletrizante da famosa franquia Marvel's Spider-Man para PS5.</p>
+                                                                <p>Pendure-se, pule e plane com as novas Asas de Teia para percorrer a Nova York da Marvel. Alterne rapidamente entre Peter Parker e Miles Morales para jogar histórias diferentes e usar novos poderes épicos enquanto o infame vilão Venom ameaça a vida deles, das pessoas próximas a eles e toda a cidade.</p>
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                    
+
+
+
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="xbox">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-sm-12 pt-5">
+                                        <div class="card h-100">
+                                            <img src="/images/vendas/xbox/gears5/gears-5-xbox-one-capa.jpg" class="card-img-top" alt="Imagem do Produto">
+                                            <div class="card-body">
+                                                <h5 class="card-title fw-bold">Gears 5</h5>
+                                                <p class="card-text">"Gears 5" é um jogo eletrônico de tiro em terceira pessoa desenvolvido pela The Coalition e publicado pela Xbox Game Studios. É o quinto título principal da série "Gears of War" e continua a saga dos soldados COG em sua luta contra os inimigos da humanidade, incluindo a ameaça dos Locusts.</p>
+                                                <h6 class="card-subtitle mb-2 text-muted">Preço: R$89,99</h6>
+                                                <p class="card-text">Disponibilidade: <img style="width: 25px; height: 25px;" src="/images/logo plataformas/xbox.png"></p>
+                                            </div>
+                                            <div class="card-footer">
+                                                <a href="#" class="btn btn-primary btn-block">Comprar</a>
+                                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalGears5">
+                                                    Mais
+                                                </button>
+                                                <div class="modal fade" id="modalGears5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <h5 class="modal-title" id="exampleModalLabel">Gears 5</h5>
+                                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                <div id="carouselmodalGears5" class="carousel slide" data-bs-ride="carousel">
+                                                                    <div class="carousel-indicators">
+                                                                        <button type="button" data-bs-target="#carouselmodalGears5" data-bs-slide-to="0" class="active"></button>
+                                                                        <button type="button" data-bs-target="#carouselmodalGears5" data-bs-slide-to="1"></button>
+                                                                        <button type="button" data-bs-target="#carouselmodalGears5" data-bs-slide-to="2"></button>
+                                                                    </div>
+                                                                    <div class="carousel-inner">
+                                                                        <div class="carousel-item active">
+                                                                            <img src="/images/vendas/xbox/gears5/gears5-1.jpg" alt="Imagem 1" class="d-block w-100">
+                                                                        </div>
+                                                                        <div class="carousel-item">
+                                                                            <img src="/images/vendas/xbox/gears5/gears5.gif" alt="Imagem 2" class="d-block w-100">
+                                                                        </div>
+                                                                        <div class="carousel-item">
+                                                                            <img src="/images/vendas/xbox/gears5/gears5-2.jpg" alt="Imagem 3" class="d-block w-100">
+                                                                        </div>
+                                                                    </div>
+                                                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselmodalGears5" data-bs-slide="prev">
+                                                                        <span class="carousel-control-prev-icon"></span>
+                                                                    </button>
+                                                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselmodalGears5" data-bs-slide="next">
+                                                                        <span class="carousel-control-next-icon"></span>
+                                                                    </button>
+                                                                </div>
+                                                                <h3 class="section-title text-center">Sinopse</h3>
+                                                                <p>Em "Gears 5", os jogadores retornam ao mundo sombrio e distópico da série "Gears of War", onde assumem o controle de Kait Diaz em sua jornada para desvendar os segredos de sua linhagem e enfrentar uma nova ameaça emergente.</p>
+                                                                <p>Com gráficos de última geração e uma jogabilidade intensa, "Gears 5" promete oferecer uma experiência emocionante e imersiva tanto para os fãs antigos quanto para os novos jogadores que desejam se aventurar neste universo épico de guerra e sobrevivência.</p>
+                                                                <p>Prepare-se para lutar contra hordas de inimigos e descobrir os segredos que mudarão o destino da humanidade.</p>
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-12 pt-5">
+                                        <div class="card h-100">
+                                            <img src="/images/vendas/xbox/forza horizon 5/Capa_de_Forza_Horizon_5.jpg" class="card-img-top" alt="Imagem do Produto">
+                                            <div class="card-body">
+                                                <h5 class="card-title fw-bold">Forza Horizon 5</h5>
+                                                <p class="card-text">"Forza Horizon 5" é um jogo eletrônico de corrida desenvolvido pela Playground Games e publicado pela Xbox Game Studios. É o quinto título da série "Forza Horizon" e oferece aos jogadores a oportunidade de explorar um vasto mundo aberto repleto de paisagens exuberantes e emocionantes desafios de corrida.</p>
+                                                <h6 class="card-subtitle mb-2 text-muted">Preço: R$149,99</h6>
+                                                <p class="card-text">Disponibilidade: <img style="width: 25px; height: 25px;" src="/images/logo plataformas/xbox.png"></p>
+                                            </div>
+                                            <div class="card-footer">
+                                                <a href="#" class="btn btn-primary btn-block">Comprar</a>
+                                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalForzaHorizon5">
+                                                    Mais
+                                                </button>
+                                                <div class="modal fade" id="modalForzaHorizon5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <h5 class="modal-title" id="exampleModalLabel">Forza Horizon 5</h5>
+                                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                <div id="carouselmodalForzaHorizon5" class="carousel slide" data-bs-ride="carousel">
+                                                                    <div class="carousel-indicators">
+                                                                        <button type="button" data-bs-target="#carouselmodalForzaHorizon5" data-bs-slide-to="0" class="active"></button>
+                                                                        <button type="button" data-bs-target="#carouselmodalForzaHorizon5" data-bs-slide-to="1"></button>
+                                                                        <button type="button" data-bs-target="#carouselmodalForzaHorizon5" data-bs-slide-to="2"></button>
+                                                                    </div>
+                                                                    <div class="carousel-inner">
+                                                                        <div class="carousel-item active">
+                                                                            <img src="/images/vendas/xbox/forza horizon 5/ForzaHorizon5-1.jpg" alt="Imagem 1" class="d-block w-100">
+                                                                        </div>
+                                                                        <div class="carousel-item">
+                                                                            <img src="/images/vendas/xbox/forza horizon 5/ForzaHorizon5.gif" alt="Imagem 2" class="d-block w-100">
+                                                                        </div>
+                                                                        <div class="carousel-item">
+                                                                            <img src="/images/vendas/xbox/forza horizon 5/ForzaHorizon5-2.jpg" alt="Imagem 3" class="d-block w-100">
+                                                                        </div>
+                                                                    </div>
+                                                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselmodalForzaHorizon5" data-bs-slide="prev">
+                                                                        <span class="carousel-control-prev-icon"></span>
+                                                                    </button>
+                                                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselmodalForzaHorizon5" data-bs-slide="next">
+                                                                        <span class="carousel-control-next-icon"></span>
+                                                                    </button>
+                                                                </div>
+                                                                <h3 class="section-title text-center">Sinopse</h3>
+                                                                <p>Em "Forza Horizon 5", os jogadores são convidados a participar do maior festival de corrida automobilística já visto, situado nas belas paisagens do México. Com uma variedade de carros e eventos emocionantes, o jogo oferece uma experiência de corrida imersiva e empolgante para entusiastas e novatos do gênero.</p>
+                                                                <p>Com gráficos de tirar o fôlego e uma jogabilidade excepcional, "Forza Horizon 5" promete ser o pináculo da franquia, proporcionando aos jogadores horas de diversão enquanto exploram e competem neste mundo aberto repleto de adrenalina.</p>
+                                                                <p>Prepare-se para acelerar, explorar e se divertir como nunca antes em "Forza Horizon 5".</p>
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-12 pt-5">
+                                        <div class="card h-100">
+                                            <img src="/images/vendas/xbox/Halo infinite/Halo_Infinite_capa.png" class="card-img-top" alt="Imagem do Produto">
+                                            <div class="card-body">
+                                                <h5 class="card-title fw-bold">Halo Infinite</h5>
+                                                <p class="card-text">"Halo Infinite" é um jogo eletrônico de tiro em primeira pessoa desenvolvido pela 343 Industries e publicado pela Xbox Game Studios. É o sexto título principal da série Halo e continua a história do icônico herói Master Chief em sua luta contra a ameaça alienígena conhecida como Covenant.</p>
+                                                <h6 class="card-subtitle mb-2 text-muted">Preço: R$99,99</h6>
+                                                <p class="card-text">Disponibilidade: <img style="width: 25px; height: 25px;" src="/images/logo plataformas/Xbox.png"></p>
+                                            </div>
+                                            <div class="card-footer">
+                                                <a href="#" class="btn btn-primary btn-block">Comprar</a>
+                                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalHaloInfinite">
+                                                    Mais
+                                                </button>
+                                                <div class="modal fade" id="modalHaloInfinite" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <h5 class="modal-title" id="exampleModalLabel">Halo Infinite</h5>
+                                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                <div id="carouselmodalHaloInfinite" class="carousel slide" data-bs-ride="carousel">
+                                                                    <div class="carousel-indicators">
+                                                                        <button type="button" data-bs-target="#carouselmodalHaloInfinite" data-bs-slide-to="0" class="active"></button>
+                                                                        <button type="button" data-bs-target="#carouselmodalHaloInfinite" data-bs-slide-to="1"></button>
+                                                                        <button type="button" data-bs-target="#carouselmodalHaloInfinite" data-bs-slide-to="2"></button>
+                                                                    </div>
+                                                                    <div class="carousel-inner">
+                                                                        <div class="carousel-item active">
+                                                                            <img src="/images/vendas/xbox/halo infinite/HaloInfite-1.jpg" alt="Imagem 1" class="d-block w-100">
+                                                                        </div>
+                                                                        <div class="carousel-item">
+                                                                            <img src="/images/vendas/xbox/halo infinite/HaloInfinte.gif" alt="Imagem 2" class="d-block w-100">
+                                                                        </div>
+                                                                        <div class="carousel-item">
+                                                                            <img src="/images/vendas/xbox/halo infinite/HaloInfite-2.jpg" alt="Imagem 3" class="d-block w-100">
+                                                                        </div>
+                                                                    </div>
+                                                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselmodalHaloInfinite" data-bs-slide="prev">
+                                                                        <span class="carousel-control-prev-icon"></span>
+                                                                    </button>
+                                                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselmodalHaloInfinite" data-bs-slide="next">
+                                                                        <span class="carousel-control-next-icon"></span>
+                                                                    </button>
+                                                                </div>
+                                                                <h3 class="section-title text-center">Sinopse</h3>
+                                                                <p>Em "Halo Infinite", os jogadores assumem o papel do Master Chief em sua batalha épica contra as forças do Covenant. Com gráficos de última geração e uma campanha emocionante, o jogo promete levar a experiência Halo a novos patamares.</p>
+                                                                <p>Prepare-se para se juntar ao icônico super soldado em uma jornada que definirá o destino da humanidade e enfrentará novos desafios e inimigos pelo caminho.</p>
+                                                                <p>A guerra pelo futuro da galáxia está prestes a começar. Esteja pronto para lutar como nunca antes.</p>
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-12 pt-5">
+                                        <div class="card h-100">
+                                            <img src="/images/vendas/xbox/state of decay 2/State_of_Decay_2-capa.jpg" class="card-img-top" alt="Imagem do Produto">
+                                            <div class="card-body">
+                                                <h5 class="card-title fw-bold">State of Decay 2</h5>
+                                                <p class="card-text">"State of Decay 2" é um jogo eletrônico de sobrevivência desenvolvido pela Undead Labs e publicado pela Xbox Game Studios. É a sequência do popular "State of Decay" e desafia os jogadores a construir, gerenciar e defender sua comunidade em um mundo pós-apocalíptico infestado por zumbis.</p>
+                                                <h6 class="card-subtitle mb-2 text-muted">Preço: R$69,99</h6>
+                                                <p class="card-text">Disponibilidade: <img style="width: 25px; height: 25px;" src="/images/logo plataformas/Xbox.png"></p>
+                                            </div>
+                                            <div class="card-footer">
+                                                <a href="#" class="btn btn-primary btn-block">Comprar</a>
+                                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalStateOfDecay2">
+                                                    Mais
+                                                </button>
+                                                <div class="modal fade" id="modalStateOfDecay2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <h5 class="modal-title" id="exampleModalLabel">State of Decay 2</h5>
+                                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                <div id="carouselmodalStateOfDecay2" class="carousel slide" data-bs-ride="carousel">
+                                                                    <div class="carousel-indicators">
+                                                                        <button type="button" data-bs-target="#carouselmodalStateOfDecay2" data-bs-slide-to="0" class="active"></button>
+                                                                        <button type="button" data-bs-target="#carouselmodalStateOfDecay2" data-bs-slide-to="1"></button>
+                                                                        <button type="button" data-bs-target="#carouselmodalStateOfDecay2" data-bs-slide-to="2"></button>
+                                                                    </div>
+                                                                    <div class="carousel-inner">
+                                                                        <div class="carousel-item active">
+                                                                            <img src="/images/vendas/xbox/state of decay 2/State of Decay 2.jpg" alt="Imagem 1" class="d-block w-100">
+                                                                        </div>
+                                                                        <div class="carousel-item">
+                                                                            <img src="/images/vendas/xbox/state of decay 2/State of Decay 2.gif" alt="Imagem 2" class="d-block w-100">
+                                                                        </div>
+                                                                        <div class="carousel-item">
+                                                                            <img src="/images/vendas/xbox/state of decay 2/stateOfDecay2-1.avif" alt="Imagem 3" class="d-block w-100">
+                                                                        </div>
+                                                                    </div>
+                                                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselmodalStateOfDecay2" data-bs-slide="prev">
+                                                                        <span class="carousel-control-prev-icon"></span>
+                                                                    </button>
+                                                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselmodalStateOfDecay2" data-bs-slide="next">
+                                                                        <span class="carousel-control-next-icon"></span>
+                                                                    </button>
+                                                                </div>
+                                                                <h3 class="section-title text-center">Sinopse</h3>
+                                                                <p>Em "State of Decay 2", os jogadores enfrentam os desafios brutais de sobreviver em um mundo devastado por zumbis. Com uma variedade de personagens jogáveis, habilidades para desenvolver e recursos para gerenciar, o jogo oferece uma experiência envolvente de construção de comunidade e sobrevivência.</p>
+                                                                <p>Com gráficos realistas e mecânicas de jogo aprimoradas, "State of Decay 2" é uma jornada emocionante através do apocalipse zumbi, onde cada decisão pode determinar o destino de sua comunidade.</p>
+                                                                <p>Prepare-se para lutar, construir e sobreviver em "State of Decay 2".</p>
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+
+
+
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="nintendo">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-sm-12 pt-5">
+                                        <div class="card h-100">
+                                            <img src="/images/vendas/nintendo/Kirby's Return to Dream Land/capa.jpg" class="card-img-top" alt="Imagem do Produto">
+                                            <div class="card-body">
+                                                <h5 class="card-title fw-bold">Kirby's Return to Dream Land</h5>
+                                                <p class="card-text">"Kirby's Return to Dream Land" é um jogo eletrônico de plataforma desenvolvido pela HAL Laboratory e publicado pela Nintendo para o console Wii. É o décimo segundo título da série "Kirby" e leva os jogadores a uma aventura colorida e divertida com o personagem Kirby em sua busca para salvar Dream Land.</p>
+                                                <h6 class="card-subtitle mb-2 text-muted">Preço: R$149,99</h6>
+                                                <p class="card-text">Disponibilidade: <img style="width: 25px; height: 25px;" src="/images/logo plataformas/nintendo.png"></p>
+                                            </div>
+                                            <div class="card-footer">
+                                                <a href="#" class="btn btn-primary btn-block">Comprar</a>
+                                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalKirbysReturn">
+                                                    Mais
+                                                </button>
+                                                <div class="modal fade" id="modalKirbysReturn" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <h5 class="modal-title" id="exampleModalLabel">Kirby's Return to Dream Land</h5>
+                                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                <div id="carouselmodalKirbysReturn" class="carousel slide" data-bs-ride="carousel">
+                                                                    <div class="carousel-indicators">
+                                                                        <button type="button" data-bs-target="#carouselmodalKirbysReturn" data-bs-slide-to="0" class="active"></button>
+                                                                        <button type="button" data-bs-target="#carouselmodalKirbysReturn" data-bs-slide-to="1"></button>
+                                                                        <button type="button" data-bs-target="#carouselmodalKirbysReturn" data-bs-slide-to="2"></button>
+                                                                    </div>
+                                                                    <div class="carousel-inner">
+                                                                        <div class="carousel-item active">
+                                                                            <img src="/images/vendas//nintendo/Kirby's Return to Dream Land/imagem 1.webp" alt="Imagem 1" class="d-block w-100">
+                                                                        </div>
+                                                                        <div class="carousel-item">
+                                                                            <img src="/images/vendas/nintendo/Kirby's Return to Dream Land/gif.gif" alt="Imagem 2" class="d-block w-100">
+                                                                        </div>
+                                                                        <div class="carousel-item">
+                                                                            <img src="/images/vendas/nintendo/Kirby's Return to Dream Land/imagem 2.jpg" alt="Imagem 3" class="d-block w-100">
+                                                                        </div>
+                                                                    </div>
+                                                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselmodalKirbysReturn" data-bs-slide="prev">
+                                                                        <span class="carousel-control-prev-icon"></span>
+                                                                    </button>
+                                                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselmodalKirbysReturn" data-bs-slide="next">
+                                                                        <span class="carousel-control-next-icon"></span>
+                                                                    </button>
+                                                                </div>
+                                                                <h3 class="section-title text-center">Sinopse</h3>
+                                                                <p>Em "Kirby's Return to Dream Land", os jogadores embarcam em uma jornada com o adorável personagem rosa, Kirby, enquanto ele viaja por Dream Land em busca de peças de uma nave espacial perdida. Com a capacidade de copiar as habilidades de seus inimigos, Kirby enfrenta desafios únicos em cada fase.</p>
+                                                                <p>Com gráficos coloridos e jogabilidade acessível, "Kirby's Return to Dream Land" é uma aventura divertida para jogadores de todas as idades, repleta de chefes desafiadores, mini-jogos e modos multiplayer cooperativos.</p>
+                                                                <p>Prepare-se para explorar Dream Land e salvar o dia com Kirby!</p>
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-12 pt-5">
+                                        <div class="card h-100">
+                                            <img src="/images/vendas/nintendo/Zelda totk/capa.jpg" class="card-img-top" alt="Imagem do Jogo">
+                                            <div class="card-body">
+                                                <h5 class="card-title fw-bold">Zelda: Tears of the Kingdom</h5>
+                                                <p class="card-text">"Zelda: Tears of the Kingdom" é um jogo eletrônico de aventura inspirado na famosa série "The Legend of Zelda". Neste jogo, os jogadores assumem o papel de um herói destinado a salvar o reino de Hyrule de uma terrível ameaça sombria.</p>
+                                                <h6 class="card-subtitle mb-2 text-muted">Preço: R$69,99</h6>
+                                                <p class="card-text">Disponibilidade: <img style="width: 25px; height: 25px;" src="/images/logo plataformas/nintendo.png"></p>
+                                            </div>
+                                            <div class="card-footer">
+                                                <a href="#" class="btn btn-primary btn-block">Comprar</a>
+                                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalZeldaTears">
+                                                    Mais
+                                                </button>
+                                                <div class="modal fade" id="modalZeldaTears" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <h5 class="modal-title" id="exampleModalLabel">Zelda: Tears of the Kingdom</h5>
+                                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                <div id="carouselmodalZeldaTears" class="carousel slide" data-bs-ride="carousel">
+                                                                    <div class="carousel-indicators">
+                                                                        <button type="button" data-bs-target="#carouselmodalZeldaTears" data-bs-slide-to="0" class="active"></button>
+                                                                        <button type="button" data-bs-target="#carouselmodalZeldaTears" data-bs-slide-to="1"></button>
+                                                                        <button type="button" data-bs-target="#carouselmodalZeldaTears" data-bs-slide-to="2"></button>
+                                                                    </div>
+                                                                    <div class="carousel-inner">
+                                                                        <div class="carousel-item active">
+                                                                            <img src="/images/vendas/nintendo/Zelda totk/imagem 1.webp" alt="Screenshot 1" class="d-block w-100">
+                                                                        </div>
+                                                                        <div class="carousel-item">
+                                                                            <img src="/images/vendas/nintendo/Zelda totk/gif.gif" alt="Screenshot 2" class="d-block w-100">
+                                                                        </div>
+                                                                        <div class="carousel-item">
+                                                                            <img src="/images/vendas/nintendo/Zelda totk/imagem 2t.webp" alt="Screenshot 3" class="d-block w-100">
+                                                                        </div>
+                                                                    </div>
+                                                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselmodalZeldaTears" data-bs-slide="prev">
+                                                                        <span class="carousel-control-prev-icon"></span>
+                                                                    </button>
+                                                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselmodalZeldaTears" data-bs-slide="next">
+                                                                        <span class="carousel-control-next-icon"></span>
+                                                                    </button>
+                                                                </div>
+                                                                <h3 class="section-title text-center">Descrição</h3>
+                                                                <p>"Zelda: Tears of the Kingdom" apresenta uma narrativa envolvente, quebra-cabeças desafiadores e batalhas épicas, tudo dentro do mundo expansivo e mágico de Hyrule. Os jogadores explorarão masmorras antigas, interagirão com personagens memoráveis e descobrirão segredos antigos enquanto buscam restaurar a paz no reino.</p>
+                                                                <p>Com gráficos impressionantes e uma trilha sonora emocionante, "Zelda: Tears of the Kingdom" é uma experiência de jogo que irá cativar os fãs da série e novos jogadores, levando-os a uma jornada inesquecível através de Hyrule.</p>
+                                                                <p>Prepare-se para se aventurar e descobrir os segredos por trás das lágrimas do reino em "Zelda: Tears of the Kingdom".</p>
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-12 pt-5">
+                                        <div class="card h-100">
+                                            <img src="/images/vendas/nintendo/splatoon/capa.jpg" class="card-img-top" alt="Imagem do Produto">
+                                            <div class="card-body">
+                                                <h5 class="card-title fw-bold">Splatoon 2</h5>
+                                                <p class="card-text">"Splatoon 2" é um jogo de tiro em terceira pessoa desenvolvido e publicado pela Nintendo para o console Nintendo Switch. Nele, os jogadores controlam personagens conhecidos como Inklings, e seu objetivo é cobrir o maior território possível com tinta da cor da sua equipe.</p>
+                                                <h6 class="card-subtitle mb-2 text-muted">Preço: R$199,99</h6>
+                                                <p class="card-text">Disponibilidade: <img style="width: 25px; height: 25px;" src="/images/logo plataformas/nintendo.png"></p>
+                                            </div>
+                                            <div class="card-footer">
+                                                <a href="#" class="btn btn-primary btn-block">Comprar</a>
+                                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalSplatoon2">
+                                                    Mais
+                                                </button>
+                                                <div class="modal fade" id="modalSplatoon2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <h5 class="modal-title" id="exampleModalLabel">Splatoon 2</h5>
+                                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                <div id="carouselmodalSplatoon2" class="carousel slide" data-bs-ride="carousel">
+                                                                    <div class="carousel-indicators">
+                                                                        <button type="button" data-bs-target="#carouselmodalSplatoon2" data-bs-slide-to="0" class="active"></button>
+                                                                        <button type="button" data-bs-target="#carouselmodalSplatoon2" data-bs-slide-to="1"></button>
+                                                                        <button type="button" data-bs-target="#carouselmodalSplatoon2" data-bs-slide-to="2"></button>
+                                                                    </div>
+                                                                    <div class="carousel-inner">
+                                                                        <div class="carousel-item active">
+                                                                            <img src="/images/vendas/nintendo/splatoon/imagem 1.avif" alt="Screenshot 1" class="d-block w-100">
+                                                                        </div>
+                                                                        <div class="carousel-item">
+                                                                            <img src="/images/vendas/nintendo/splatoon/gif.gif" alt="Screenshot 2" class="d-block w-100">
+                                                                        </div>
+                                                                        <div class="carousel-item">
+                                                                            <img src="/images/vendas/nintendo/splatoon/imagem 2.avif" alt="Screenshot 3" class="d-block w-100">
+                                                                        </div>
+                                                                    </div>
+                                                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselmodalSplatoon2" data-bs-slide="prev">
+                                                                        <span class="carousel-control-prev-icon"></span>
+                                                                    </button>
+                                                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselmodalSplatoon2" data-bs-slide="next">
+                                                                        <span class="carousel-control-next-icon"></span>
+                                                                    </button>
+                                                                </div>
+                                                                <h3 class="section-title text-center">Descrição</h3>
+                                                                <p>"Splatoon 2" é um jogo vibrante e cheio de ação, onde a estratégia e a coordenação de equipe são essenciais. Com uma variedade de modos de jogo, incluindo batalhas territoriais online e desafios para um jogador, há sempre algo novo para explorar neste colorido mundo de tinta e diversão.</p>
+                                                                <p>Prepare-se para mergulhar em emocionantes batalhas de tinta e mostrar suas habilidades de tiro e estratégia em "Splatoon 2".</p>
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-12 pt-5">
+                                        <div class="card h-100">
+                                            <img src="/images/vendas/nintendo/Luigi's Mansion 2/capa.webp" class="card-img-top" alt="Imagem do Produto">
+                                            <div class="card-body">
+                                                <h5 class="card-title fw-bold">Luigi's Mansion 2</h5>
+                                                <p class="card-text">"Luigi's Mansion 2", também conhecido como "Luigi's Mansion: Dark Moon", é um jogo de aventura e quebra-cabeça desenvolvido pela Next Level Games e publicado pela Nintendo para o console Nintendo 3DS. Nele, os jogadores assumem o papel de Luigi, que deve explorar mansões assombradas, capturar fantasmas e salvar seu irmão Mario.</p>
+                                                <h6 class="card-subtitle mb-2 text-muted">Preço: R$199,99</h6>
+                                                <p class="card-text">Disponibilidade: <img style="width: 25px; height: 25px;" src="/images/logo plataformas/nintendo.png"></p>
+                                            </div>
+                                            <div class="card-footer">
+                                                <a href="#" class="btn btn-primary btn-block">Comprar</a>
+                                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalLuigisMansion2">
+                                                    Mais
+                                                </button>
+                                                <div class="modal fade" id="modalLuigisMansion2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <h5 class="modal-title" id="exampleModalLabel">Luigi's Mansion 2</h5>
+                                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                <div id="carouselmodalLuigisMansion2" class="carousel slide" data-bs-ride="carousel">
+                                                                    <div class="carousel-indicators">
+                                                                        <button type="button" data-bs-target="#carouselmodalLuigisMansion2" data-bs-slide-to="0" class="active"></button>
+                                                                        <button type="button" data-bs-target="#carouselmodalLuigisMansion2" data-bs-slide-to="1"></button>
+                                                                        <button type="button" data-bs-target="#carouselmodalLuigisMansion2" data-bs-slide-to="2"></button>
+                                                                    </div>
+                                                                    <div class="carousel-inner">
+                                                                        <div class="carousel-item active">
+                                                                            <img src="/images/vendas/nintendo/Luigi's Mansion 2/imagem 1.jpg" alt="Screenshot 1" class="d-block w-100">
+                                                                        </div>
+                                                                        <div class="carousel-item">
+                                                                            <img src="/images/vendas/nintendo/Luigi's Mansion 2/gif.gif" alt="Screenshot 2" class="d-block w-100">
+                                                                        </div>
+                                                                        <div class="carousel-item">
+                                                                            <img src="/images/vendas/nintendo/Luigi's Mansion 2/imagem 2.jpg" alt="Screenshot 3" class="d-block w-100">
+                                                                        </div>
+                                                                    </div>
+                                                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselmodalLuigisMansion2" data-bs-slide="prev">
+                                                                        <span class="carousel-control-prev-icon"></span>
+                                                                    </button>
+                                                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselmodalLuigisMansion2" data-bs-slide="next">
+                                                                        <span class="carousel-control-next-icon"></span>
+                                                                    </button>
+                                                                </div>
+                                                                <h3 class="section-title text-center">Descrição</h3>
+                                                                <p>"Luigi's Mansion 2" leva os jogadores a uma emocionante aventura enquanto Luigi explora várias mansões assombradas, cada uma com seus próprios quebra-cabeças e desafios únicos. O jogo apresenta gráficos impressionantes e uma jogabilidade envolvente, onde os jogadores devem usar o Poltergust 5000 para capturar fantasmas e resolver enigmas.</p>
+                                                                <p>Com sua atmosfera cativante e personagens charmosos, "Luigi's Mansion 2" é uma experiência imperdível para fãs de aventura e quebra-cabeças.</p>
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="pc">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-sm-12 pt-5">
+                                        <div class="card h-100">
+                                            <img src="/images/vendas/playstation/god of war/God_of_War_Ragnarök_capa.jpg" class="card-img-top" alt="Imagem do Produto">
+                                            <div class="card-body">
+                                                <h5 class="card-title fw-bold">God of War Ragnarok</h5>
+                                                <p class="card-text">"God of War Ragnarok" é um jogo eletrônico de ação e aventura desenvolvido pela Santa Monica Studio e publicado pela Sony Interactive Entertainment. É a sequência direta de "God of War" lançado em 2018, onde os jogadores assumem o papel de Kratos, um guerreiro espartano que embarca em uma jornada mitológica pelos reinos nórdicos.</p>
+                                                <h6 class="card-subtitle mb-2 text-muted">Preço: R$79,99</h6>
+                                                <p class="card-text">Disponibilidade: <img style="width: 25px; height: 25px;" src="/images/logo plataformas/stean.png"></p>
+                                            </div>
+                                            <div class="card-footer">
+                                                <a href="#" class="btn btn-primary btn-block">Comprar</a>
+                                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalGodOfWar">
+                                                    Mais
+                                                </button>
+                                                <div class="modal fade" id="modalGodOfWar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <h5 class="modal-title" id="exampleModalLabel">God of War Ragnarok</h5>
+                                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                <div id="carouselmodalGodOfWar" class="carousel slide" data-bs-ride="carousel">
+                                                                    <div class="carousel-indicators">
+                                                                        <button type="button" data-bs-target="#carouselmodalGodOfWar" data-bs-slide-to="0" class="active"></button>
+                                                                        <button type="button" data-bs-target="#carouselmodalGodOfWar" data-bs-slide-to="1"></button>
+                                                                        <button type="button" data-bs-target="#carouselmodalGodOfWar" data-bs-slide-to="2"></button>
+                                                                    </div>
+                                                                    <div class="carousel-inner">
+                                                                        <div class="carousel-item active">
+                                                                            <img src="/images/vendas/playstation/god of war/god of war 1.png" alt="Imagem 1" class="d-block w-100">
+                                                                        </div>
+                                                                        <div class="carousel-item">
+                                                                            <img src="/images/vendas/playstation/god of war/god of war.gif" alt="Imagem 2" class="d-block w-100">
+                                                                        </div>
+                                                                        <div class="carousel-item">
+                                                                            <img src="/images/vendas/playstation/god of war/god of war.jpg" alt="Imagem 3" class="d-block w-100">
+                                                                        </div>
+                                                                    </div>
+                                                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselmodalGodOfWar" data-bs-slide="prev">
+                                                                        <span class="carousel-control-prev-icon"></span>
+                                                                    </button>
+                                                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselmodalGodOfWar" data-bs-slide="next">
+                                                                        <span class="carousel-control-next-icon"></span>
+                                                                    </button>
+                                                                </div>
+                                                                <h3 class="section-title text-center">Sinopse</h3>
+                                                                <p>Em "God of War Ragnarok", os jogadores embarcarão em uma nova jornada ao lado de Kratos e seu filho Atreus, explorando os reinos nórdicos enquanto enfrentam deuses, monstros e criaturas mitológicas em sua busca por redenção e vingança.</p>
+                                                                <p>Com gráficos deslumbrantes e uma narrativa épica, o jogo promete entregar uma experiência imersiva e emocionante que irá cativar os fãs da série e novos jogadores.</p>
+                                                                <p>Prepare-se para se aventurar pelos reinos dos deuses e desvendar os segredos de uma das sagas mais emocionantes e aclamadas dos videogames.</p>
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-12 pt-5">
+                                        <div class="card h-100">
+                                            <img src="/images/vendas/playstation/Horizon Forbidden West/Horizon_Forbidden_West_capa.jpg" class="card-img-top" alt="Imagem do Produto">
+                                            <div class="card-body">
+                                                <h5 class="card-title fw-bold">Horizon Forbidden West</h5>
+                                                <p class="card-text">"Horizon Forbidden West" é um jogo eletrônico de ação e aventura desenvolvido pela Guerrilla Games e publicado pela Sony Interactive Entertainment. É a sequência do aclamado "Horizon Zero Dawn", onde os jogadores exploram um mundo pós-apocalíptico dominado por máquinas.</p>
+                                                <h6 class="card-subtitle mb-2 text-muted">Preço: R$79,99</h6>
+                                                <p class="card-text">Disponibilidade: <img style="width: 25px; height: 25px;" src="/images/logo plataformas/stean.png"></p>
+                                            </div>
+                                            <div class="card-footer">
+                                                <a href="#" class="btn btn-primary btn-block">Comprar</a>
+                                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalHorizonForbiddenWest">
+                                                    Mais
+                                                </button>
+                                                <div class="modal fade" id="modalHorizonForbiddenWest" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <h5 class="modal-title" id="exampleModalLabel">Horizon Forbidden West</h5>
+                                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                <div id="carouselModalHorizonForbiddenWest" class="carousel slide" data-bs-ride="carousel">
+                                                                    <div class="carousel-indicators">
+                                                                        <button type="button" data-bs-target="#carouselModalHorizonForbiddenWest" data-bs-slide-to="0" class="active"></button>
+                                                                        <button type="button" data-bs-target="#carouselModalHorizonForbiddenWest" data-bs-slide-to="1"></button>
+                                                                        <button type="button" data-bs-target="#carouselModalHorizonForbiddenWest" data-bs-slide-to="2"></button>
+                                                                    </div>
+                                                                    <div class="carousel-inner">
+                                                                        <div class="carousel-item active">
+                                                                            <img src="/images/vendas/playstation/Horizon Forbidden West/Horizon Forbidden West1.jpeg" alt="Imagem 1" class="d-block w-100">
+                                                                        </div>
+                                                                        <div class="carousel-item">
+                                                                            <img src="/images/vendas/playstation/Horizon Forbidden West/Horizon Forbidden West.gif" alt="Imagem 2" class="d-block w-100">
+                                                                        </div>
+                                                                        <div class="carousel-item">
+                                                                            <img src="/images/vendas/playstation/Horizon Forbidden West/Horizon Forbidden West2.jpeg" alt="Imagem 3" class="d-block w-100">
+                                                                        </div>
+                                                                    </div>
+                                                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselModalHorizonForbiddenWest" data-bs-slide="prev">
+                                                                        <span class="carousel-control-prev-icon"></span>
+                                                                    </button>
+                                                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselModalHorizonForbiddenWest" data-bs-slide="next">
+                                                                        <span class="carousel-control-next-icon"></span>
+                                                                    </button>
+                                                                </div>
+                                                                <h3 class="section-title text-center">Sinopse</h3>
+                                                                <p>Em "Horizon Forbidden West", os jogadores acompanharão Aloy em uma nova jornada por paisagens impressionantes e perigosas, enfrentando máquinas ferozes e explorando ruínas de civilizações antigas.</p>
+                                                                <p>Com um mundo aberto vasto e cheio de mistérios, o jogo promete entregar uma experiência imersiva e emocionante, expandindo ainda mais o universo de "Horizon Zero Dawn".</p>
+                                                                <p>Prepare-se para descobrir os segredos de um mundo pós-apocalíptico e desvendar os mistérios que aguardam em "Horizon Forbidden West".</p>
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-12 pt-5">
+                                        <div class="card h-100">
+                                            <img src="/images/vendas/xbox/gears5/gears-5-xbox-one-capa.jpg" class="card-img-top" alt="Imagem do Produto">
+                                            <div class="card-body">
+                                                <h5 class="card-title fw-bold">Gears 5</h5>
+                                                <p class="card-text">"Gears 5" é um jogo eletrônico de tiro em terceira pessoa desenvolvido pela The Coalition e publicado pela Xbox Game Studios. É o quinto título principal da série "Gears of War" e continua a saga dos soldados COG em sua luta contra os inimigos da humanidade, incluindo a ameaça dos Locusts.</p>
+                                                <h6 class="card-subtitle mb-2 text-muted">Preço: R$89,99</h6>
+                                                <p class="card-text">Disponibilidade: <img style="width: 25px; height: 25px;" src="/images/logo plataformas/stean.png"></p>
+                                            </div>
+                                            <div class="card-footer">
+                                                <a href="#" class="btn btn-primary btn-block">Comprar</a>
+                                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalGears5">
+                                                    Mais
+                                                </button>
+                                                <div class="modal fade" id="modalGears5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <h5 class="modal-title" id="exampleModalLabel">Gears 5</h5>
+                                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                <div id="carouselmodalGears5" class="carousel slide" data-bs-ride="carousel">
+                                                                    <div class="carousel-indicators">
+                                                                        <button type="button" data-bs-target="#carouselmodalGears5" data-bs-slide-to="0" class="active"></button>
+                                                                        <button type="button" data-bs-target="#carouselmodalGears5" data-bs-slide-to="1"></button>
+                                                                        <button type="button" data-bs-target="#carouselmodalGears5" data-bs-slide-to="2"></button>
+                                                                    </div>
+                                                                    <div class="carousel-inner">
+                                                                        <div class="carousel-item active">
+                                                                            <img src="/images/vendas/xbox/gears5/gears5-1.jpg" alt="Imagem 1" class="d-block w-100">
+                                                                        </div>
+                                                                        <div class="carousel-item">
+                                                                            <img src="/images/vendas/xbox/gears5/gears5.gif" alt="Imagem 2" class="d-block w-100">
+                                                                        </div>
+                                                                        <div class="carousel-item">
+                                                                            <img src="/images/vendas/xbox/gears5/gears5-2.jpg" alt="Imagem 3" class="d-block w-100">
+                                                                        </div>
+                                                                    </div>
+                                                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselmodalGears5" data-bs-slide="prev">
+                                                                        <span class="carousel-control-prev-icon"></span>
+                                                                    </button>
+                                                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselmodalGears5" data-bs-slide="next">
+                                                                        <span class="carousel-control-next-icon"></span>
+                                                                    </button>
+                                                                </div>
+                                                                <h3 class="section-title text-center">Sinopse</h3>
+                                                                <p>Em "Gears 5", os jogadores retornam ao mundo sombrio e distópico da série "Gears of War", onde assumem o controle de Kait Diaz em sua jornada para desvendar os segredos de sua linhagem e enfrentar uma nova ameaça emergente.</p>
+                                                                <p>Com gráficos de última geração e uma jogabilidade intensa, "Gears 5" promete oferecer uma experiência emocionante e imersiva tanto para os fãs antigos quanto para os novos jogadores que desejam se aventurar neste universo épico de guerra e sobrevivência.</p>
+                                                                <p>Prepare-se para lutar contra hordas de inimigos e descobrir os segredos que mudarão o destino da humanidade.</p>
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-12 pt-5">
+                                        <div class="card h-100">
+                                            <img src="/images/vendas/xbox/forza horizon 5/Capa_de_Forza_Horizon_5.jpg" class="card-img-top" alt="Imagem do Produto">
+                                            <div class="card-body">
+                                                <h5 class="card-title fw-bold">Forza Horizon 5</h5>
+                                                <p class="card-text">"Forza Horizon 5" é um jogo eletrônico de corrida desenvolvido pela Playground Games e publicado pela Xbox Game Studios. É o quinto título da série "Forza Horizon" e oferece aos jogadores a oportunidade de explorar um vasto mundo aberto repleto de paisagens exuberantes e emocionantes desafios de corrida.</p>
+                                                <h6 class="card-subtitle mb-2 text-muted">Preço: R$149,99</h6>
+                                                <p class="card-text">Disponibilidade: <img style="width: 25px; height: 25px;" src="/images/logo plataformas/stean.png"></p>
+                                            </div>
+                                            <div class="card-footer">
+                                                <a href="#" class="btn btn-primary btn-block">Comprar</a>
+                                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalForzaHorizon5">
+                                                    Mais
+                                                </button>
+                                                <div class="modal fade" id="modalForzaHorizon5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <h5 class="modal-title" id="exampleModalLabel">Forza Horizon 5</h5>
+                                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                <div id="carouselmodalForzaHorizon5" class="carousel slide" data-bs-ride="carousel">
+                                                                    <div class="carousel-indicators">
+                                                                        <button type="button" data-bs-target="#carouselmodalForzaHorizon5" data-bs-slide-to="0" class="active"></button>
+                                                                        <button type="button" data-bs-target="#carouselmodalForzaHorizon5" data-bs-slide-to="1"></button>
+                                                                        <button type="button" data-bs-target="#carouselmodalForzaHorizon5" data-bs-slide-to="2"></button>
+                                                                    </div>
+                                                                    <div class="carousel-inner">
+                                                                        <div class="carousel-item active">
+                                                                            <img src="/images/vendas/xbox/forza horizon 5/ForzaHorizon5-1.jpg" alt="Imagem 1" class="d-block w-100">
+                                                                        </div>
+                                                                        <div class="carousel-item">
+                                                                            <img src="/images/vendas/xbox/forza horizon 5/ForzaHorizon5.gif" alt="Imagem 2" class="d-block w-100">
+                                                                        </div>
+                                                                        <div class="carousel-item">
+                                                                            <img src="/images/vendas/xbox/forza horizon 5/ForzaHorizon5-2.jpg" alt="Imagem 3" class="d-block w-100">
+                                                                        </div>
+                                                                    </div>
+                                                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselmodalForzaHorizon5" data-bs-slide="prev">
+                                                                        <span class="carousel-control-prev-icon"></span>
+                                                                    </button>
+                                                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselmodalForzaHorizon5" data-bs-slide="next">
+                                                                        <span class="carousel-control-next-icon"></span>
+                                                                    </button>
+                                                                </div>
+                                                                <h3 class="section-title text-center">Sinopse</h3>
+                                                                <p>Em "Forza Horizon 5", os jogadores são convidados a participar do maior festival de corrida automobilística já visto, situado nas belas paisagens do México. Com uma variedade de carros e eventos emocionantes, o jogo oferece uma experiência de corrida imersiva e empolgante para entusiastas e novatos do gênero.</p>
+                                                                <p>Com gráficos de tirar o fôlego e uma jogabilidade excepcional, "Forza Horizon 5" promete ser o pináculo da franquia, proporcionando aos jogadores horas de diversão enquanto exploram e competem neste mundo aberto repleto de adrenalina.</p>
+                                                                <p>Prepare-se para acelerar, explorar e se divertir como nunca antes em "Forza Horizon 5".</p>
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+        </section>
+        <section id="fale-conosco" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center pb-5">Fale <span class="text-colored">conosco</span></h2>
+                    <div class="row">
+                        <div class="col-md-7 mb-5">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="nome" class="form-label fw-bold text-colored">Seu nome</label>
+                                    <input type="text" id="nome" class="form-control" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label fw-bold text-colored">Seu e-mail</label>
+                                    <input type="email" id="email" class="form-control" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="telefone" class="form-label fw-bold text-colored">Seu telefone (opcional)</label>
+                                    <input type="tel" id="telefone" class="form-control">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="mensagem" class="form-label fw-bold text-colored">Sea mensagem</label>
+                                    <textarea class="form-control" id="mensagem" required></textarea>
+                                </div>
+                                <button type="submit" class="btn fw-bold">Enviar</button>
+                            </form>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="row">
+                                <h3 class="section-title fs-4 text-colored">
+                                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                                    Redes sociaus
+                                </h3>
+                                <ul class="social-links">
+                                    <li class="fs-5">
+                                        <a href="#">
+                                            <i class="bi bi-facebook text-colored"></i>
+                                        </a>
+                                    </li>
+                                    <li class="fs-5 ms-1 me-1">
+                                        <a href="#">
+                                            <i class="bi bi-instagram text-colored"></i>
+                                        </a>
+                                    </li>
+                                    <li class="fs-5">
+                                        <a href="#">
+                                            <i class="bi bi-whatsapp text-colored"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="row mt-4">
+                                <h3 class="section-title fs-4 text-colored">
+                                    <i class="bi bi-cursor-fill"></i>
+                                    Endereço
+                                </h3>
+                                <p>
+                                    Rua Test Exemplo nº 145, Bairro Bootstrap - São Paulo - Sp
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+</script>
+</body>
+</html>
