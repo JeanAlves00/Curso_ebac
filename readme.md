@@ -1,3 +1,3 @@
-# Curso EBAC
+Curso Html
 
-Repositorio criado com o intuito de salvar as aulas da EBAC
+Repositorio Com o intuito de Salvar as aulas da ebac
