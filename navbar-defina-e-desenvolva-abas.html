@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
+    <style>
+        .navbar-na .nav-link.active {
+            color: #fff;
+        }
+
+        .nav-link {
+            text-align: center;
+        }
+
+        section {
+            height: 100vh;
+            background-color: #ffffff;
+            padding-top: 120px;
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+            left: 0;
+            background-color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header id="cabecalho">
+        <div class="navbar navbar-expand-lg">
+           <div class="container">
+            <h1>Titulo do site</h1>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                <ul class="nav navbar-nav nav-pills">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#produtos">Produtos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#promocoes">Promoções</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">contato</a>
+                    </li>
+                </ul>
+            </nav>
+           </div>
+        </div>
+    </header>
+    <div data-bs-spy="scroll" data-bs-target="#cabecalho">
+        <section id="inicio">
+            <h2>Inicio</h2>
+        </section>
+        <section id="produtos">
+            <h2>Produtos</h2>
+            <div class="container">
+                <nav class="nav nav-tabs">
+                    <button data-bs-toggle="tab" data-bs-target="#aba1" class="nav-link active" type="button">Eletrônicos</button>
+                    <button data-bs-toggle="tab" data-bs-target="#aba2" class="nav-link" type="button">Moda Masculina</button>
+                    <button data-bs-toggle="tab" data-bs-target="#aba3" class="nav-link" type="button">Moda Feminina</button>
+                </nav>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="aba1">
+                        Conteudo da aba de Eletrônicos
+                    </div>
+                    <div class="tab-pane" id="aba2">
+                        Conteudo da aba de Moda Masculina
+                    </div>
+                    <div class="tab-pane" id="aba3">
+                        Conteudo da aba de Moda Feminina
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="promocoes">
+            <h2>Promoções</h2>
+        </section>
+        <section id="contato">
+            <h2>Contato</h2>
+        </section>
+    </div>
+    <script src="lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
