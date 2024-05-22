@@ -1,0 +1,9 @@
+button {
+    background-color: blue !important; /*regra global*/
+    /* !important sobrescreve regras globais e regras especificas de um elemento
+    nao e  muito recomendade pois pode afetar outros elementos */
+}
+
+.btn-sucess {
+    background-color: green; /*regra de um elemento especifico*/
+}
