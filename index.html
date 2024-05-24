@@ -26,6 +26,37 @@
             </nav>
         </div>
     </header>
+
+    <div class="container">
+        <div class="accordion">
+            <header class="accordion-header">
+                Nome do accordion
+            </header>
+            <p class="accordion-content">
+                conteudo
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="mensagem mensagem-is-error">
+                <h5 class="mensagem-titulo">Atenção</h5>
+                <p class="mensagem-conteudo">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore vero quis fugiat saepe voluptas harum libero ratione quaerat cumque sapiente placeat mollitia, repudiandae dolorum beatae possimus earum veritatis quos hic.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+         const accordions = document.querySelectorAll('.accordion-header');
+        for (let i = 0; i < accordions.length; i++) {
+            accordions[i].addEventListener('click', function(event) {
+                event.target.parentNode.classList.toggle('ais-open');
+            });
+        }
+    </script>
 <body>
 </body>
 </html>

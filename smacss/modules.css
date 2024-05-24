@@ -1,3 +1,46 @@
 .title {
     font-size: 48px;
 }
+
+.mensagem {
+    padding: 8px;
+    border: 1px solid #333;
+    border-radius: 8px;
+}
+
+.mensagem-titulo {
+    font-size: 18px;
+}
+
+.mensagem-texto {
+    font-size: 14px;
+}
+
+
+/* quando for uma mensagem de erro abaixo */
+
+.mensagem-is-error {
+    border-color: red;
+    background-color: rgb(248, 193, 193);
+    color: red;
+}
+
+/* termino */
+
+.accordion {
+    border: 1px solid #000000;
+}
+
+.accordion-header {
+    padding: 8px;
+}
+
+.accordion-content {
+    padding: 8px;
+    border-top: 1px solid #eee;
+    display: none;
+}
+
+.accordion.is-open .accordion-content {
+    display: block;
+}
