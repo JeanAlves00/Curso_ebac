@@ -1,68 +1,65 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    margin: 0;
+    background-color: #f4f4f4;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    margin: 0;
 }
 
-.container {
-    background-color: white;
-    padding: 20px;
+.card {
+    background-color: #fff;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
     text-align: center;
-    max-width: 400px;
-    width: 100%;
+    overflow: hidden;
 }
 
-header {
-    background-color: #220A44;
-    color: white;
-    padding: 10px;
-    font-size: 24px;
-    font-weight: bold;
-    border-radius: 8px 8px 0 0;
-}
-
-.transferencia {
-    background-color: #f0f0f0;
+.card-header {
+    background-color: #f8f9fa;
     padding: 20px;
-    border-radius: 0 0 8px 8px;
 }
 
-.transferencia h3 {
-    background-color: #0066cc;
-    color: white;
-    padding: 10px;
-    border-radius: 4px;
+.profile-img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
 }
 
-.transferencia .valor {
-    display: flex;
-    justify-content: space-between;
-    background-color: #666;
-    color: white;
-    padding: 10px;
-    border-radius: 4px;
-    margin: 20px 0;
+.card-body {
+    padding: 20px;
 }
 
-.transferencia .info {
-    color: #666;
-    font-size: 14px;
+.name {
+    margin: 10px 0;
+    font-size: 1.5em;
+    color: #333;
 }
 
-.social {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 20px;
+.title {
+    color: #777;
+    margin-bottom: 15px;
 }
 
-.social img {
-    width: 30px;
-    height: 30px;
+.description {
+    color: #555;
+    font-size: 0.9em;
+    line-height: 1.4;
+}
+
+.social-links {
+    margin-top: 15px;
+}
+
+.social-links a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.social-links img {
+    width: 24px;
+    height: 24px;
 }
