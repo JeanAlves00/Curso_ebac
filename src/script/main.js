@@ -12,13 +12,20 @@ document.addEventListener("DOMContentLoaded", function(){
 })
 */
 
-$document.ready(function() {
+$(document).ready(function() {
     $('#btn-buscar-cep').click(function(){
         const cep = $("#cep").val();
         const endpoint = `https://viacep.com.br/ws/${cep}/json/`;
 
-        $.ajax(endpoint).done(function(resposta){
-            console.log(resposta)
-        })
-    })
-})
+        $.ajax({
+            url: endpoint,
+            method: 'GET',
+            success: function(resposta) {
+                console.log(resposta);
+            },
+            error: function(err) {
+                console.error('Erro ao buscar CEP:', err);
+            }
+        });
+    });
+});
