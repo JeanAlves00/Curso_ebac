@@ -22,42 +22,40 @@ $(document).ready(function() {
         $(botao).find("i").addClass("d-none");
         $(botao).find("span").removeClass("d-none");
 
-        // $.ajax(endpoint).done(function(resposta){
-        //     const logradouro = resposta.logradouro;
-        //     const bairro = resposta.bairro;
-        //     const cidade = resposta.localidade;
-        //     const estado = resposta.uf;
-        //     const endereco = `${logradouro}, ${bairro} - ${cidade} - ${estado}`;
-        //     $("#endereco").val(endereco);
-
-        //     $(botao).find("i").removeClass("d-none");
-        //     $(botao).find("span").addClass("d-none");
-        // })
         fetch(endpoint)
-        .then(function(resposta){
-            return resposta.json()
-        })
+            .then(function(resposta){
+                if (!resposta.ok) {
+                    throw new Error('CEP não encontrado');
+                }
+                return resposta.json();
+            })
+            .then(function(json){
+                if (json.erro) {
+                    throw new Error('CEP não encontrado');
+                }
+                const logradouro = json.logradouro || '';
+                const bairro = json.bairro || '';
+                const cidade = json.localidade || '';
+                const estado = json.uf || '';
+                const endereco = `${logradouro}, ${bairro} - ${cidade} - ${estado}`;
+                $("#endereco").val(endereco);
+            })
+            .catch(function(erro){
+                alert("CEP não encontrado");
+            })
+            .finally(function(){
+                setTimeout(function(){
+                    $(botao).find("i").removeClass("d-none");
+                    $(botao).find("span").addClass("d-none");
+                }, 1000);
+            });
+    });
 
-        .then(function(json){
-            const logradouro = json.logradouro;
-            const bairro = json.bairro;
-            const cidade = json.localidade;
-            const estado = json.uf;
-            const endereco = `${logradouro}, ${bairro} - ${cidade} - ${estado}`;
-            $("#endereco").val(endereco);
-
-            
-        })
-
-        .catch(function(erro){
-            alert("CEP não encontrado")
-        })
-
-        .finally(function(){
-            setTimeout(function(){
-                $(botao).find("i").removeClass("d-none");
-                $(botao).find("span").addClass("d-none");
-            },1000);
-        })
-    })
-})
+    $('#formulario-pedido').submit(function(evento){
+        evento.preventDefault();
+        
+        if ($('#nome').val().length === 0) {
+            throw new Error('Nome obrigatório');
+        }
+    });
+});
