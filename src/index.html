@@ -5,30 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Github</title>
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="/src/styles/main.css">
 </head>
 <body>
     <header>
         <div class="container">
-            <img class="profile-avatar" src="https://via.placeholder.com/180x180" alt=".">
-            <h1 class="profile-name">Gian Souza</h1>
-            <h2 class="profile-username">@ogiansouza</h2>
+            <img class="profile-avatar" src="/src/images/minha-foto.png" id="avatar" alt="foto">
+            <h1 class="profile-name" id="name">Jean Alves</h1>
+            <h2 class="profile-username" id="username">@JeanAlves00</h2>
             <ul class="numbers">
                 <li class="numbers-item">
                     <h4>Repositórios</h4>
-                    5
+                    <span id="repos"></span>
                 </li>
                 <li class="numbers-item">
                     <h4>Seguidores</h4>
-                    5
+                    <span id="followers"></span>
                 </li>
                 <li class="numbers-item">
                     <h4>Seguindo</h4>
-                    5
+                    <span id="following"></span>
                 </li>
             </ul>
-            <a href="#" class="profile-link">Ver no Github</a>
+            <a href="#" id="link" class="profile-link">Ver no Github</a>
         </div>
     </header>
+
+    <script src="/src/scripts/main.js"></script>
 </body>
 </html>
