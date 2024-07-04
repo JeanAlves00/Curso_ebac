@@ -6,18 +6,24 @@ function Pessoa(nome) {
 }
 
 function funcionario(nome, cargo, salario)  {
-    this.nome = nome;
     this.cargo = cargo;
-    this.salario = salario;
+    
+    let _salario = salario;
+
+    this.retornaSalario = function() {
+        return _salario;
+    }
 
     this.dizCargo = function() {
-        console.log("eu sou uma " + this.cargo);
+        console.log("Meu cargo é " + this.cargo);
     }
     
     Pessoa.call(this, nome);
 }
 
 
-const funcionario1 = new funcionario('Maria', 'Desenvolvedora', 2000);
+const funcionario1 = new funcionario('Maria', 'Desenvolvedora', 5000);
 funcionario1.falar();
 funcionario1.dizCargo();
+
+console.log(funcionario1.retornaSalario());
