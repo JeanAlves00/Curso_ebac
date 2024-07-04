@@ -5,13 +5,26 @@ function Pessoa(nome) {
     }
 }
 
+//getter e setter
 function funcionario(nome, cargo, salario)  {
     this.cargo = cargo;
     
     let _salario = salario;
 
-    this.retornaSalario = function() {
+    this.getSalario = function() {
         return _salario;
+    }
+
+    this.setSalario = function(valor) {
+        if  (typeof valor === "number") {
+            _salario = ("Meu salario e de: R$" + valor);
+        }
+    }
+
+    this.aumento = function() {
+        const novoSalario = _salario * 1.1;
+        console.log("Meu novo salario é de: R$" + novoSalario);
+        _salario = novoSalario;
     }
 
     this.dizCargo = function() {
@@ -25,5 +38,8 @@ function funcionario(nome, cargo, salario)  {
 const funcionario1 = new funcionario('Maria', 'Desenvolvedora', 5000);
 funcionario1.falar();
 funcionario1.dizCargo();
+funcionario1.setSalario(5000);
+funcionario1.aumento();
 
-console.log(funcionario1.retornaSalario());
+
+console.log(funcionario1.getSalario());
