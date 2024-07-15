@@ -8,17 +8,5 @@ const retornaUmCarro = (/*argumentos. Quando e apenas um argumento nao precisa d
 console.log(minhaFuncao())//eu sou uma arrow function
 console.log(retornaUmCarro())
 
-const carro = {
-    velocdadeAtual: 40,
-    acelerar: function () {
-        this.velocdadeAtual += 10
-    }
-    frear: () => {
-        this.velocdadeAtual -= 10
-    }
-}// na arrow nao funciona o this direito sem ser no navegador
 
-carro.acelerar();
-carro.frear();
-
-console.log (carro.velocdadeAtual)
+// na arrow nao funciona o this direito sem ser no navegador
