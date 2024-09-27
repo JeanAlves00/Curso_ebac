@@ -14,12 +14,12 @@ class ContaSalario extends Conta {
 }
 
 interface ITransacional {
-    transferir: (valor: number, destinatario: number) => boolean;
+    transferir: (valor: number, destinatario: Conta) => boolean;
     taxaTransferencia: number;
 }
 
 class ContaCorrente extends Conta implements ITransacional {
-    transferir (valor: number, destinatario: number) {
+    transferir (valor: number, destinatario: Conta) {
         destinatario.saldo += (valor - this.taxaTransferencia);
         return true;
     };
