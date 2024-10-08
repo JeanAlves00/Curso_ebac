@@ -1,4 +1,6 @@
 <script setup>
+import { reactive } from 'vue';
+
 const nome="jean Alves"
 const meuOjs = {
   nome: "jean",
@@ -19,6 +21,25 @@ const imagemAleatoria1 = false
 const imagemAleatoria2 = true
 
 const estaAutorizado = false
+
+//let contador = 0
+
+const estado = reactive({
+  contador: 0,
+})
+
+function incrementar () {
+  estado.contador++
+}
+
+function decrementar () {
+  estado.contador--;
+}
+
+function alteraEmail(evento) {
+  estado.email = evento.target.value;
+}
+
 </script>
 
 <template>
@@ -31,6 +52,20 @@ const estaAutorizado = false
   <h1 v-else>Não possui acesso</h1>
 
   <button :disabled="!botaoEstaHabilitado">evianr mensagem</button>
+
+  <br />
+  <hr />
+
+  {{ estado.contador }}
+
+  <button @click="incrementar" type="button">+</button>
+  <button @click="decrementar" type="button">-</button>
+
+  <br />
+  <hr />
+
+  {{ estado.email }}
+  <input type="email" @keyup="alteraEmail" />
 </template>
 
 <style scoped>
