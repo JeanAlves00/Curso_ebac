@@ -26,6 +26,9 @@ const estaAutorizado = false
 
 const estado = reactive({
   contador: 0,
+  email: '',
+  saldo: 5000,
+  transferindo: 0,
 })
 
 function incrementar () {
@@ -37,7 +40,17 @@ function decrementar () {
 }
 
 function alteraEmail(evento) {
-  estado.email = evento.target.value;
+  return estado.saldo - estado.transferindo
+}
+
+function mostraSaldoFuturo() {
+  const { saldo, transferindo} = estado;
+  return saldo - transferindo;
+}
+
+function validaValorDeTransferencias() {
+  const { saldo, transferindo} = estado;
+  return saldo >= transferindo;
 }
 
 </script>
@@ -65,8 +78,34 @@ function alteraEmail(evento) {
   <hr />
 
   {{ estado.email }}
+
   <input type="email" @keyup="alteraEmail" />
+
+  <br />
+  <hr />
+
+  Saldo: {{ estado.saldo }}<br />
+  Transferindo: {{ estado.transferindo }}<br />
+  Saldo depois da transferencia: {{ mostraSaldoFuturo() }}<br />
+  <input class="campo" :class="{ invalido: !validaValorDeTransferencias }"  @keyup="evento => estado.transferindo = evento.target.value" type="number" placeholder="quantia para transferir">
+  <button v-if="validaValorDeTransferencias()">Transferir</button>
+  <span v-else>Valor maior que o saldo</span>
 </template>
 
 <style scoped>
+
+img {
+  max-width: 200px;
+}
+
+.invalido {
+  outline-color: red;
+  border-color: red;
+}
+
+.campo {
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
 </style>
