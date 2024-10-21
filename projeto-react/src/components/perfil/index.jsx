@@ -1,18 +1,15 @@
-import  './Perfil.css'
+import  './perfil.css'
 
 //export default () => { -- Outras opcoes de exportação
 //export default function() {
 
-const Perfil = () => {
-    const usuario ={
-        nome: 'usuario',
-        avatarUrl: 'https://placehold.co/600x400/EEE/31343C'
-    }
+// eslint-disable-next-line react/prop-types
+const Perfil = ({endereco, nome}) => {
 
     return (
         <div>
-            <img className="perfil-avatar" src={usuario.avatarUrl}/>
-            <h3 className="perfil-titulos">{usuario.nome}</h3>
+            <img className="perfil-avatar" src={endereco}/>
+            <h3 className="perfil-titulos">{nome}</h3>
         </div>
     )
 }
