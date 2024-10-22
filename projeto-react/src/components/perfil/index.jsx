@@ -1,16 +1,18 @@
-import  './perfil.css'
+import styles from './perfil.module.css';
 
 //export default () => { -- Outras opcoes de exportação
 //export default function() {
 
 // eslint-disable-next-line react/prop-types
-const Perfil = ({endereco, nome}) => {
+const Perfil = ({nomeUsuario}) => {
 
     return (
-        <div>
-            <img className="perfil-avatar" src={endereco}/>
-            <h3 className="perfil-titulos">{nome}</h3>
-        </div>
+        <header className={styles.header}>
+            <img className={styles.avatar} src={`https://github.com/${nomeUsuario}.png`}/>
+            <h1 className={styles.titulo}>
+                {nomeUsuario}
+            </h1>
+        </header>
     )
 }
 

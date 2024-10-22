@@ -1,23 +1,32 @@
 import { useState } from "react";
-
 import Perfil from "./components/Perfil";
-//import Formulario from "./components/Formulario";
 import ReposList from "./components/ReposList";
+import styles from './App.module.css'; // Altere o caminho conforme necessário
 
 function App() {
-  const [formularioEstaVisivel, setFormularioEstaVisivel] = useState(true);
+  const [nomeUsuario, setNomeUsuario] = useState('');
+
   return (
-    <>
-      <Perfil nome="jean" endereco="https://avatars.githubusercontent.com/u/154983968?v=4" />
-      <ReposList />
+    <div className={styles.container}>
+      <input 
+        type="text" 
+        onBlur={(e) => setNomeUsuario(e.target.value)} 
+        className={styles.input} 
+        placeholder="Digite seu nome de usuário..."
+      />
 
-      {/* {formularioEstaVisivel && (
-        <Formulario />
+      {nomeUsuario.length > 4 && (
+        <>
+          <div className={styles.perfil}>
+            <Perfil nomeUsuario={nomeUsuario} />
+          </div>
+          <div className={styles.reposList}>
+            <ReposList nomeUsuario={nomeUsuario} />
+          </div>
+        </>
       )}
-
-      <button onClick={() => setFormularioEstaVisivel(!formularioEstaVisivel)} type="button">Toggle fomr</button> */}
-    </>
-  )
+    </div>
+  );
 }
 
 export default App;

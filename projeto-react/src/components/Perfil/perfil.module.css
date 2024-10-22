@@ -1,0 +1,24 @@
+.header {
+    display: flex;        
+    align-items: center;  
+    padding: 20px;         
+    background-color: #131212;
+    border-radius: 8px;           
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+}
+
+.avatar {
+    width: 80px;        
+    height: 80px;           
+    border-radius: 50%;      
+    margin-right: 20px;        
+    border: 2px solid #ccc;   
+    object-fit: cover;
+}
+
+.titulo {
+    font-size: 30px;      
+    font-weight: bold;          
+    color: #ffffff;               
+    margin: 0;                  
+}
