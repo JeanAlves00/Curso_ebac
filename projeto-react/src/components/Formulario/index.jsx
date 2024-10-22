@@ -13,6 +13,7 @@ const Formulario = () => {
             console.log('Componente finalizado');
         }
     }, []);
+
     useEffect(() => {
         console.log('o estado nome mudou');
     }, [ nome ]);
@@ -21,11 +22,8 @@ const Formulario = () => {
         console.log('o estado das notas mudou');
     }, [ materiaA, materiaB, materiaB]);
 
-    const alteraNome = (evento) => {
-        //setNome(evento.target.value);
-        setNome(estadoAnterior => {
-            return evento.target.value;
-        });
+    const alteraNome = (e) => {
+        setNome(e.target.value);
     }
 
     const renderizaResultado = () => {
@@ -41,6 +39,12 @@ const Formulario = () => {
 
     return (
         <form>
+            <ul>
+                {[1,2,3,4,5].map(item => (
+                    <li key={item}> {item} </li>
+                ))}
+            </ul>
+
             <input 
                 type="text" 
                 placeholder="Nome do aluno" 
