@@ -18,8 +18,9 @@
   },
   "homepage": "https://github.com/JeanAlves00/Curso_ebac#readme",
   "devDependencies": {
-    "jest": "^29.7.0",
+    "@types/jest": "^29.5.14",
     "glob": "^9.0.0",
+    "jest": "^29.7.0",
     "lru-cache": "^7.14.0"
   }
 }
