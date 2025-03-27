@@ -1,0 +1,24 @@
+{
+  "name": "curso_ebac",
+  "version": "1.0.0",
+  "description": "Onde fica salvo as aulas da ebac e alguns testes",
+  "main": "index.js",
+  "scripts": {
+    "cypress": "cypress",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JeanAlves00/Curso_ebac.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JeanAlves00/Curso_ebac/issues"
+  },
+  "homepage": "https://github.com/JeanAlves00/Curso_ebac#readme",
+  "devDependencies": {
+    "cypress": "^14.2.1"
+  }
+}
